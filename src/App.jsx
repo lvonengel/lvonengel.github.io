@@ -5,6 +5,7 @@ import Home from './Home';
 import BuddyBot from './projects/BuddyBot'
 import PillPal from './projects/PillPal'
 import Farmadillo from './projects/Farmadillo'
+import MusicBox from './projects/MusicBox';
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects/BuddyBot" element={<BuddyBot/>}/>
         <Route path="/projects/PillPal" element={<PillPal/>}/>
         <Route path="/projects/Farmadillo" element={<Farmadillo/>}/>
+        <Route path="/projects/MusicBox" element={<MusicBox/>}/>
       </Routes>
     </>
   )

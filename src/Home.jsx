@@ -6,6 +6,7 @@ const projects = [
   { title: "BuddyBot", image: "/img/imgClubs/Forge.png", to: "/projects/BuddyBot"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal" },
   { title: "Farmadillo", image: "/img/imgClubs/Forge.png", to: "/projects/Farmadillo" },
+  { title: "Music Box", image: "/img/imgMusicBox/MusicBoxLogo.png", to: "/projects/MusicBox" },
 ];
 
 function Home() {
