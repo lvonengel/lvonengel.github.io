@@ -42,7 +42,8 @@
 }
 
 .project-grid {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }

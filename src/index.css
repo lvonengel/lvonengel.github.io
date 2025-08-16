@@ -77,23 +77,3 @@ button:focus-visible {
     margin: 0 auto;
     text-align: left;
 }
-
-.project-card {
-  display: block;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #111;
-  border: 1px solid #222;
-  text-decoration: none;
-}
-
-.project-card-title {
-  padding: 12px 14px;
-  font-weight: 600;
-  color:black;
-}
-
-.project-card-img {
-  height: 100px;
-  width: 100px;
-}

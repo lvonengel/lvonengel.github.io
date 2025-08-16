@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import ProjectCard from './components/ProjectCard'
+import NavigationBar from './components/NavigationBar';
 import './App.css'
 
 const projects = [
@@ -13,8 +13,9 @@ function App() {
 
   return (
     <>
+      <NavigationBar />
       <div className="columns">
-        <div>
+        <div className='home'>
           <h1>Hello! I'm</h1>
           <h1>Liu von Engelbrechten</h1>
         </div>
@@ -27,9 +28,11 @@ function App() {
           {projects.map((p) => (<ProjectCard key={p.title} title={p.title} image={p.image} />))}
         </div>
       </section>
-      
-      
 
+      <section className="timeline">
+        <h1>Timeline</h1>
+      </section>
+      
     </>
   )
 }

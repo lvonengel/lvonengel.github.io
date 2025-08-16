@@ -1,0 +1,32 @@
+
+.project-card {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #222;
+  text-decoration: none;
+  width: 250px
+}
+
+.project-card :hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.project-card-img-wrap {
+  background-color: white;
+}
+
+
+.project-card-title {
+  padding: 12px 14px;
+  font-weight: 600;
+  color:white;
+  background-color: lightblue;
+}
+
+.project-card-img {
+  height: 100px;
+  width: auto;
+}
