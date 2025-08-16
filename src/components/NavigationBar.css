@@ -1,16 +1,36 @@
-.nav-right {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 30px;
-    gap: 1em;
-    padding-right: 50px;
-    padding-top: 25px;
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: lightblue;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 10px;
+.nav-logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #555;
 }
