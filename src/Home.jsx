@@ -21,12 +21,10 @@ function Home() {
         <div className="columns">
           <img src="/img/imghome/profile.png" style={{ height: "300px", width: "auto" }}/>
           <h3>
-            Hello! My name is Liu I am a second-year at Northeastern University from Cleveland, Ohio. 
+            I am a second-year at Northeastern University from Cleveland, Ohio. 
             I'm passionate about robotics and building systems that bridge software and hardware together. <br /> <br />
 
             In my free time, I love hiking and playing tennis in my free time. <br /> <br />
-
-            Please feel free to explore other pages here to look at my past projects!
           </h3>
         </div>
       </section>
