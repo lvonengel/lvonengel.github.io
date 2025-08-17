@@ -1,5 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 
+import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
 import Robobuddy from './projects/Robobuddy'
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <NavigationBar />
-      
+      <ScrollManager />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>

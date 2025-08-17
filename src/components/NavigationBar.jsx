@@ -1,22 +1,19 @@
-import { useLocation } from "react-router-dom";
-import "./NavigationBar.css";
+import { Link, useLocation } from "react-router-dom";
+import './NavigationBar.css'
 
 export default function NavigationBar() {
   const { pathname } = useLocation();
   const onHome = pathname === "/";
-
-  // in-page anchors when in Home page
-  // absolute anchors when in other pages
-  const hrefFor = (id) => (onHome ? `#${id}` : `/#${id}`);
+  const toFor = (id) => (onHome ? `#${id}` : { pathname: "/", hash: `#${id}` });
 
   return (
     <header className="navigation-bar">
       <h2 className="nav-logo">Liu von Engelbrechten</h2>
       <nav className="nav-right">
         <ul className="nav-links">
-          <li><a href={hrefFor("about")}>About</a></li>
-          <li><a href={hrefFor("projects")}>Projects</a></li>
-          <li><a href={hrefFor("timeline")}>Work</a></li>
+          <li><Link to={toFor("about")}>About</Link></li>
+          <li><Link to={toFor("projects")}>Projects</Link></li>
+          <li><Link to={toFor("timeline")}>Work</Link></li>
         </ul>
       </nav>
     </header>
