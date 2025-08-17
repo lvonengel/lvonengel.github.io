@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  padding-top: 100px;
 }
 
 .logo {
@@ -54,4 +55,9 @@ html {
 
 #home, #about, #projects {
   scroll-margin-top: 80px;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

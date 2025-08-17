@@ -14,7 +14,6 @@ export default function NavigationBar() {
       <h2 className="nav-logo">Liu von Engelbrechten</h2>
       <nav className="nav-right">
         <ul className="nav-links">
-          <li><a href={hrefFor("home")}>Home</a></li>
           <li><a href={hrefFor("about")}>About</a></li>
           <li><a href={hrefFor("projects")}>Projects</a></li>
           <li><a href={hrefFor("timeline")}>Work</a></li>
