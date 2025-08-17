@@ -4,8 +4,7 @@ export default function MusicBox() {
         <main>
             <h1>Music Box</h1>
             <div class="columns">
-                <img src="/img/imgMusicBox/MusicBoxLogo.png"
-                style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgMusicBox/MusicBoxLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <p>
                 MusicBox is a website that allows you to rate albums, search for songs, write reviews, and 
                 share with your friends. I collaborated with four other people in GitHub using React.

@@ -3,7 +3,7 @@ import Experience from './components/Experience'
 import './App.css'
 
 const projects = [
-  { title: "BuddyBot", image: "/img/imgClubs/Forge.png", to: "/projects/BuddyBot"},
+  { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal" },
   { title: "Farmadillo", image: "/img/imgClubs/Forge.png", to: "/projects/Farmadillo" },
   { title: "Music Box", image: "/img/imgMusicBox/MusicBoxLogo.png", to: "/projects/MusicBox" },
@@ -19,8 +19,7 @@ function Home() {
           <h1>Liu von Engelbrechten</h1>
         </div>
         <div className="columns">
-          <img src="/img/imghome/profile.png"
-          style={{ height: "300px", width: "auto" }}/>
+          <img src="/img/imghome/profile.png" style={{ height: "300px", width: "auto" }}/>
           <h3>
             Hello! My name is Liu I am a second-year at Northeastern University from Cleveland, Ohio. 
             I'm passionate about robotics and building systems that bridge software and hardware together. <br /> <br />
