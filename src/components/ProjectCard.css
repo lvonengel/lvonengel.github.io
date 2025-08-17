@@ -9,7 +9,7 @@
   width: 250px
 }
 
-.project-card :hover {
+.project-card:hover .project-card-img-wrap {
     background-color: bisque;
     cursor: pointer;
 }
