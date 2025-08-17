@@ -1,0 +1,28 @@
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.footer p {
+    margin: 20px 0;
+}
+
+.footer img {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}

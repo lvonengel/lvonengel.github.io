@@ -6,6 +6,7 @@ import BuddyBot from './projects/BuddyBot'
 import PillPal from './projects/PillPal'
 import Farmadillo from './projects/Farmadillo'
 import MusicBox from './projects/MusicBox';
+import Footer from './components/Footer'
 
 import './App.css'
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/projects/Farmadillo" element={<Farmadillo/>}/>
         <Route path="/projects/MusicBox" element={<MusicBox/>}/>
       </Routes>
+      <Footer />
     </>
   )
 }
