@@ -102,7 +102,6 @@ export default function Robobuddy() {
                     </div>
                     <h2>User Interface</h2>
                     <div class="columns">
-                        <img src="/img/imgRobobuddy/homeScreenUI.png" style={{ height: "300px", width: "auto" }}/>
                         <img src="/img/imgRobobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
                     </div>
 
