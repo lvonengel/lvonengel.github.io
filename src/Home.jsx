@@ -1,5 +1,5 @@
 import ProjectCard from './components/ProjectCard'
-
+import Experience from './components/Experience'
 import './App.css'
 
 const projects = [
@@ -38,7 +38,8 @@ function Home() {
       </section>
 
       <section id="timeline">
-        <h1>Timeline</h1>
+        <h1>Work Experience</h1>
+        <Experience />
       </section>
       
     </>

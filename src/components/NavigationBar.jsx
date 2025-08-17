@@ -1,4 +1,3 @@
-// src/components/NavigationBar.jsx
 import { useLocation } from "react-router-dom";
 import "./NavigationBar.css";
 
@@ -6,7 +5,8 @@ export default function NavigationBar() {
   const { pathname } = useLocation();
   const onHome = pathname === "/";
 
-  // in-page anchors when in Home, absolute anchors when in other pages
+  // in-page anchors when in Home page
+  // absolute anchors when in other pages
   const hrefFor = (id) => (onHome ? `#${id}` : `/#${id}`);
 
   return (
@@ -17,6 +17,7 @@ export default function NavigationBar() {
           <li><a href={hrefFor("home")}>Home</a></li>
           <li><a href={hrefFor("about")}>About</a></li>
           <li><a href={hrefFor("projects")}>Projects</a></li>
+          <li><a href={hrefFor("timeline")}>Work</a></li>
         </ul>
       </nav>
     </header>
