@@ -42,6 +42,11 @@ export default function Robobuddy() {
                         className={activeSection === "software" ? "activeButton": ""}>
                         Software Contribution
                     </button>
+
+                    <button onClick={() => setActiveSection(activeSection === "result" ? null : "result")}
+                        className={activeSection === "result" ? "activeButton": ""}>
+                        Final Result
+                    </button>
                 </div>
             </section>
 
@@ -61,7 +66,18 @@ export default function Robobuddy() {
                         </video>
                     </div>
 
-                    
+                    <h2>Motor Control</h2>
+                    <p>
+                        The slider on the UI controls the speed of the motor. This is connected to the
+                        diffuser to control the strength of the diffuser.
+                    </p>
+                    <div class="columns">
+                        <img src="/img/imgRobobuddy/motorCircuit.png"style={{ height: "325px", width: "auto" }}/>
+                        <video width="200" controls>
+                            <source src="/img/imgRobobuddy/motorSlider.mp4" type="video/mp4" />
+                            Cannot load video.
+                        </video>
+                    </div>
                     
                 </div>
             )}
@@ -84,8 +100,18 @@ export default function Robobuddy() {
                             <li>Arduino Giga displays information</li>
                         </ol>
                     </div>
+                    <h2>User Interface</h2>
+                    <div class="columns">
+                        <img src="/img/imgRobobuddy/homeScreenUI.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/imgRobobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
+                    </div>
 
                 </div>
+            )}
+
+            {/* Final Result */}
+            {activeSection == "result" && (
+                <img src="/img/imgRobobuddy/robobuddyFinal.jpg" style={{ height: "400px", width: "auto" }}/>
             )}
 
 
