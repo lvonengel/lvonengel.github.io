@@ -1,0 +1,36 @@
+.title {
+  color: lightsalmon;
+  font-size: 65px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+video {
+    padding: 10px 10px;
+}
+
+.projectOverview {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+}
+
+.projectOverview h2 {
+  text-align: center;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+section {
+    padding-top: 10px;
+}
