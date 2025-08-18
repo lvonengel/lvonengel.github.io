@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
+import PersonalPortfolio from './projects/PersonalPortfolio';
 import Robobuddy from './projects/Robobuddy'
 import PillPal from './projects/PillPal'
 import Farmadillo from './projects/Farmadillo'
@@ -20,6 +21,7 @@ function App() {
       <ScrollManager />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
         <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>
         <Route path="/projects/PillPal" element={<PillPal/>}/>
         <Route path="/projects/Farmadillo" element={<Farmadillo/>}/>
