@@ -6,7 +6,7 @@ const projects = [
   { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCode.png", to: "/projects/PersonalPortfolio"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal" },
-  { title: "Farmadillo", image: "/img/imgClubs/Forge.png", to: "/projects/Farmadillo" },
+  { title: "Farmadillo", image: "/img/imgGreenhouse/FarmadilloLogo.png", to: "/projects/Farmadillo" },
   { title: "Music Box", image: "/img/imgMusicBox/MusicBoxLogo.png", to: "/projects/MusicBox" },
 ];
 

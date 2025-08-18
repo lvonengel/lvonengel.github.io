@@ -8,7 +8,7 @@ export default function Farmadillo() {
         <main>
             <h1 className='title'>Farmadillo</h1>
             <div class="columns">
-                <img src="/img/imgGreenhouse/ControlBox.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgGreenhouse/FarmadilloLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className='projectOverview'>
                     <h2>Project Overview</h2>
                     <p>
