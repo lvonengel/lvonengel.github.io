@@ -4,6 +4,7 @@ import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
 import PersonalPortfolio from './projects/PersonalPortfolio';
+import EmbeddedSpider from './projects/EmbeddedSpider';
 import Robobuddy from './projects/Robobuddy'
 import PillPal from './projects/PillPal'
 import Farmadillo from './projects/Farmadillo'
@@ -21,6 +22,7 @@ function App() {
       <ScrollManager />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider/>}/>
         <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
         <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>
         <Route path="/projects/PillPal" element={<PillPal/>}/>

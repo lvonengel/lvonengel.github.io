@@ -3,6 +3,7 @@ import Experience from './components/Experience'
 import './App.css'
 
 const projects = [
+  { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider"},
   { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCode.png", to: "/projects/PersonalPortfolio"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal" },
