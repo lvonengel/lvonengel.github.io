@@ -26,7 +26,7 @@ function Home() {
             I am a second-year Computer Engineer and Computer Science major at Northeastern University from Cleveland, Ohio. 
             I'm passionate about robotics and building systems that bridge software and hardware together. <br /> <br />
 
-            In my free time, I love hiking and playing tennis in my free time. <br /> <br />
+            In my free time, I love hiking, playing tennis, and going out to try new foods. <br /> <br />
           </h3>
         </div>
       </section>
