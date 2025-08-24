@@ -46,7 +46,7 @@ function ExperienceCard({ title, company, date, image, link }) {
     <VerticalTimelineElement
       intersectionObserverProps={{
         rootMargin: "0px 0px -200px 0px",
-        triggerOnce: true,
+        triggerOnce: false,
       }}
       date={date}
       iconStyle={{ overflow: "hidden" }}
