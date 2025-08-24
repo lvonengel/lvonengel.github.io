@@ -11,6 +11,14 @@ const experiences = [
     link: "https://www.pendar.com/",
   },
   {
+    title: "FPGA Firmware Engineer (Research Lab)",
+    company: "Silicon Synapse Lab",
+    date: "March 2025 - Present",
+    skills: "Skills: C++",
+    image: "/img/imghome/Northeastern.png",
+    link: "https://siliconsynapse.sites.northeastern.edu/",
+  },
+  {
     title: "TA for Web Development",
     company: "CodePath",
     date: "January 2025 - April 2025",
