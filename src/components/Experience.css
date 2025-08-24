@@ -17,3 +17,38 @@
   background: bisque;
   color: #000;
 }
+
+
+.vertical-timeline--animate .vertical-timeline-element-content,
+.vertical-timeline--animate .vertical-timeline-element-icon {
+  transition: transform 600ms ease, opacity 600ms ease;
+  will-change: transform, opacity;
+}
+
+/* slides out of view*/
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden,
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+  visibility: visible;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+/* slides left out to left, and right out to right */
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns.vertical-timeline--animate
+    .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+    .vertical-timeline-element-content.is-hidden,
+  .vertical-timeline--two-columns.vertical-timeline--animate
+    .vertical-timeline-element.vertical-timeline-element--right
+    .vertical-timeline-element-content.is-hidden,
+  .vertical-timeline--two-columns.vertical-timeline--animate
+    .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+    .vertical-timeline-element-icon.is-hidden,
+  .vertical-timeline--two-columns.vertical-timeline--animate
+    .vertical-timeline-element.vertical-timeline-element--right
+    .vertical-timeline-element-icon.is-hidden {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}

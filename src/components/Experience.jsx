@@ -1,6 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Experience.css";
+import { useState } from "react";
 
 const experiences = [
   {
@@ -14,7 +15,6 @@ const experiences = [
     title: "FPGA Firmware Engineer (Research Lab)",
     company: "Silicon Synapse Lab",
     date: "March 2025 - Present",
-    skills: "Skills: C++",
     image: "/img/imghome/Northeastern.png",
     link: "https://siliconsynapse.sites.northeastern.edu/",
   },
@@ -42,11 +42,15 @@ const experiences = [
 ];
 
 function ExperienceCard({ title, company, date, image, link }) {
+  const [seen, setSeen] = useState(false);
   return (
     <VerticalTimelineElement
       intersectionObserverProps={{
         rootMargin: "0px 0px -200px 0px",
         triggerOnce: false,
+        onChange: (visible) => {
+          if (visible) setSeen(true);
+        },
       }}
       date={date}
       iconStyle={{ overflow: "hidden" }}
