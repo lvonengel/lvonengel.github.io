@@ -23,7 +23,7 @@ function Home() {
         <div className="columns">
           <img src="/img/imghome/profile.png" style={{ height: "300px", width: "auto" }}/>
           <h3>
-            I am a second-year at Northeastern University from Cleveland, Ohio. 
+            I am a second-year Computer Engineer and Computer Science major at Northeastern University from Cleveland, Ohio. 
             I'm passionate about robotics and building systems that bridge software and hardware together. <br /> <br />
 
             In my free time, I love hiking and playing tennis in my free time. <br /> <br />
