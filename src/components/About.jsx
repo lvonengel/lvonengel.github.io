@@ -17,8 +17,8 @@ export default function About() {
       <motion.div
         className="marquee"
         initial={{ x: 0 }}
-        animate={{ x: "-220%" }}
-        transition={{ duration: 15, ease:"linear", repeat: Infinity, repeatType: "mirror" }}
+        animate={{ x: "-105%" }}
+        transition={{ duration: 14, ease:"linear", repeat: Infinity, repeatType: "mirror" }}
       >
         Computer Engineer and Computer Science
       </motion.div>
@@ -36,10 +36,11 @@ export default function About() {
           </motion.h2>
 
           <motion.h1 className="about-body">
-            I am a third-year at Northeastern University from Cleveland, Ohio. 
-            I'm passionate about robotics and building systems that bridge software and hardware together. <br /> <br />
-
-            In my free time, I love hiking, playing tennis, and going out to try new foods. <br /> <br />
+            I am a third-year Computer Engineer and Computer Science at Northeastern University from Cleveland, Ohio. 
+            <br /> <br />
+            Starting in middle school, when I built my first gaming PC, I've been passionate about engineering and technology. 
+            I've specifically loved product development, especially robotics where I can design and build systems 
+            that blend software and hardware into something people actually use. <br /> <br />
 
             Please feel free to check out my page!
           </motion.h1>
