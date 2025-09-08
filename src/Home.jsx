@@ -5,7 +5,7 @@ import './App.css'
 
 const projects = [
   { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider"},
-  { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCode.png", to: "/projects/PersonalPortfolio"},
+  { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCrop.png", to: "/projects/PersonalPortfolio"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal" },
   { title: "Farmadillo", image: "/img/imgGreenhouse/FarmadilloLogo.png", to: "/projects/Farmadillo" },

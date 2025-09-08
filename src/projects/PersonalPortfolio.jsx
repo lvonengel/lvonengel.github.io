@@ -4,7 +4,7 @@ export default function PersonalPortfolio() {
         <main>
             <h1 className='title'>Website Portfolio</h1>
             <div class="columns">
-                <img src="/img/imgPersonalPortfolio/PersonalPortfolioCode.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgPersonalPortfolio/PersonalPortfolio.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
