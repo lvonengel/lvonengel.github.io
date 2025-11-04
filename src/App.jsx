@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
+import GCE from './projects/GCE';
 import PersonalPortfolio from './projects/PersonalPortfolio';
 import EmbeddedSpider from './projects/EmbeddedSpider';
 import Robobuddy from './projects/Robobuddy'
@@ -15,22 +16,22 @@ import './App.css'
 
 
 function App() {
-
   return (
-    <>
-      <NavigationBar />
-      <ScrollManager />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider/>}/>
-        <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
-        <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>
-        <Route path="/projects/PillPal" element={<PillPal/>}/>
-        <Route path="/projects/Farmadillo" element={<Farmadillo/>}/>
-        <Route path="/projects/MusicBox" element={<MusicBox/>}/>
-      </Routes>
-      <Footer />
-    </>
+  <>
+    <NavigationBar />
+    <ScrollManager />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects/GCE" element={<GCE/>}/>
+      <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider/>}/>
+      <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
+      <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>
+      <Route path="/projects/PillPal" element={<PillPal/>}/>
+      <Route path="/projects/Farmadillo" element={<Farmadillo/>}/>
+      <Route path="/projects/MusicBox" element={<MusicBox/>}/>
+    </Routes>
+    <Footer />
+  </>
   )
 }
 
