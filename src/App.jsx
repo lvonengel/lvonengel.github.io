@@ -4,6 +4,7 @@ import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
 import GCE from './projects/GCE';
+import KitchenChaos from './projects/KitchenChaos';
 import PersonalPortfolio from './projects/PersonalPortfolio';
 import EmbeddedSpider from './projects/EmbeddedSpider';
 import Robobuddy from './projects/Robobuddy'
@@ -23,6 +24,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/projects/GCE" element={<GCE/>}/>
+      <Route path="/projects/KitchenChaos" element={<KitchenChaos/>}/>
       <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider/>}/>
       <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
       <Route path="/projects/Robobuddy" element={<Robobuddy/>}/>

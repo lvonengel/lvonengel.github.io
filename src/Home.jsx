@@ -6,6 +6,7 @@ import './App.css'
 
 const projects = [
   { title: "Air Filter", image: "/img/imgGCE/GCELogo.png", to: "/projects/GCE", type: "hardware"},
+  { title: "Kitchen Chaos", image: "/img/imgKitchenChaos/KitchenChaos.png", to: "/projects/KitchenChaos", type: "software"},
   { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider", type: "software"},
   { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCrop.png", to: "/projects/PersonalPortfolio", type: "software"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy", type: "hardware"},
