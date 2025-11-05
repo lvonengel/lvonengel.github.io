@@ -35,12 +35,12 @@ export default function Robobuddy() {
                 <div className="buttonContributions">
                     <button onClick={() => setActiveSection(activeSection === "electrical" ? null : "electrical")}
                         className={activeSection === "electrical" ? "activeButton": ""}>
-                        Electrical Contribution
+                        Electrical
                     </button>
 
                     <button onClick={() => setActiveSection(activeSection === "software" ? null : "software")}
                         className={activeSection === "software" ? "activeButton": ""}>
-                        Software Contribution
+                        Software
                     </button>
 
                     <button onClick={() => setActiveSection(activeSection === "result" ? null : "result")}
