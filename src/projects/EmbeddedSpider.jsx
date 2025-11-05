@@ -4,11 +4,12 @@ export default function EmbeddedSpider() {
         <main>
             <h1 className='title'>Spider Robot</h1>
             <div class="columns">
-                <img src="/img/imgEmbeddedSpider/embeddedSpider.jpg" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgEmbeddedSpider/embeddedSpider.jpg" style={{ height: "400px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
                     This project used a DE1-SoC and DE10Nano-Soc to code and control a 6 legged spider.<br /> <br />  
+                    I designed movement control logic in C++ for initialization and walking.
                     </p>
                 </div>
             </div>
