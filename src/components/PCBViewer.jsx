@@ -1,12 +1,12 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, Environment, useGLTF, Center } from "@react-three/drei"
 
-function PCBModel() {
-  const { scene } = useGLTF("/models/GCEPCB3D.glb")
+function PCBModel({ modelPath }) {
+  const { scene } = useGLTF(modelPath)
   return <primitive object={scene} scale={8} />
 }
 
-export default function PCBViewer() {
+export default function PCBViewer({modelPath}) {
     return (
         //keeps box centered onpage
         <div
@@ -40,7 +40,7 @@ export default function PCBViewer() {
                 <Environment preset="city" background={false} blur={0.5} />
 
                 <Center>
-                    <PCBModel />
+                    <PCBModel modelPath={modelPath}/>
                 </Center>
 
                 <OrbitControls

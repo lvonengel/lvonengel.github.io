@@ -35,7 +35,7 @@ export default function GCE() {
 
         {/* 3D Render */}
         <h2>Main MCU PCB</h2>
-        <PCBViewer />
+        <PCBViewer modelPath="/models/GCEPCB3D.glb"/>
 
         {/* Schematic Section */}
         <section className="schematic-section">
