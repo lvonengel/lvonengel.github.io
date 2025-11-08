@@ -37,7 +37,12 @@ export default function KitchenChaos() {
                     {
                         src: "/img/imgKitchenChaos/CuttingBoardWithFood.mp4",
                         title: "Cutting Food",
-                        desc: "Added animations and logic to allow players to place or cut food."
+                        desc: "Added animations, UI bar, and logic to allow players to place or cut food."
+                    },
+                    {
+                        src: "/img/imgKitchenChaos/StoveCookingAndBurning.mp4",
+                        title: "Cooking and Burning Food",
+                        desc: "Added state machines and timers to cook/burn food."
                     },
                     ].map((video, idx) => (
                     <div className="schematic-card" key={idx}>
