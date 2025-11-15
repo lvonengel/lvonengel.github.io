@@ -6,6 +6,7 @@ export default function PillPal() {
 
     return (
         <main>
+            {/* Introduction */}
             <h1 className="title">Pill Pal</h1>
             <div className="columns">
                 <img src="/img/imgPillDispenser/PillPalLogo.png" style={{ height: "300px", width: "auto" }}/>
@@ -20,6 +21,7 @@ export default function PillPal() {
                 </div>
             </div>
 
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Hardware: Arduino, Microcontroller, Fingerprint Sensor integration, Motor controller</p>
             <p>Software: C++, LVGL</p>

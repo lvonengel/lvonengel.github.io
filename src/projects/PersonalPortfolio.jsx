@@ -2,6 +2,7 @@ import './projects.css'
 export default function PersonalPortfolio() {
     return (
         <main>
+            {/* Introduction */}
             <h1 className='title'>Website Portfolio</h1>
             <div class="columns">
                 <img src="/img/imgPersonalPortfolio/PersonalPortfolio.png" style={{ height: "300px", width: "auto" }}/>
@@ -17,6 +18,8 @@ export default function PersonalPortfolio() {
                     </p>
                 </div>
             </div>
+
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Software: React, Vite, Node.js</p>
             

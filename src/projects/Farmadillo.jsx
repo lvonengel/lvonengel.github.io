@@ -22,9 +22,10 @@ export default function Farmadillo() {
                 </div>
             </div>
 
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Hardware: Arduino, Microcontroller, Lux Sensor, Motor controller</p>
-            <p>Software: C++</p>
+            <p>Language: C++</p>
 
             {/* Personal Contribution */}
             <section>

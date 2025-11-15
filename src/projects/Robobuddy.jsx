@@ -7,6 +7,7 @@ export default function Robobuddy() {
     
     return (
         <main>
+            {/* Introduction */}
             <h1 className="title">RoboBuddy</h1>
             <div className="columns">
                 <img src="/img/imgRobobuddy/robobuddyLogo.png" style={{ height: "300px", width: "auto" }}/>
@@ -23,9 +24,11 @@ export default function Robobuddy() {
                 </div>
             </div>
 
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Hardware: Raspberry Pi, Arduino, Infrared Sensor, Motor controller</p>
-            <p>Software: Python, Linux, C++, LVGL</p>
+            <p>Software: Linux, LVGL</p>
+            <p>Lanuage: Python, C++</p>
 
             
             {/* Final Result Buttons*/}

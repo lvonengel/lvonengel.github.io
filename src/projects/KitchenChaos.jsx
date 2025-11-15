@@ -2,6 +2,7 @@ import './projects.css'
 export default function KitchenChaos() {
     return (
         <main>
+            {/* Introduction */}
             <h1 className='title'>Kitchen Chaos</h1>
             <div class="columns">
                 <img src="/img/imgKitchenChaos/KitchenChaos.png" style={{ height: "400px", width: "auto" }}/>
@@ -15,9 +16,12 @@ export default function KitchenChaos() {
                     </p>
                 </div>
             </div>
+
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Software: C#, Unity</p>
 
+            {/* Contribution */}
             <h2 className="heading">Development Milestones</h2>
             <p>Each step below highlights a new concept I learned and implemented as part of building this game.</p>
 
