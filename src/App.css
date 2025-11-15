@@ -58,9 +58,13 @@ html {
 }
 
 section {
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 
 #timeline {
   padding-top: 80px;
+}
+
+.projects {
+  padding-top: 3rem;
 }
