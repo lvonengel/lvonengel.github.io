@@ -2,6 +2,7 @@ import './projects.css'
 export default function Robot() {
     return (
         <main>
+            {/* Introduction */}
             <h1 className='title'>Robotic Arm</h1>
             <div class="columns">
                 <img src="/img/imgRobot/Arm.jpg" style={{ height: "300px", width: "auto" }}/>
@@ -17,10 +18,14 @@ export default function Robot() {
                     </p>
                 </div>
             </div>
+
+            {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Hardware: Arduino, PWM</p>
             <p>Software: FDM 3D Printing</p>
             <br/> <br/>
+
+            {/* Contribution */}
             <h2 className="heading">Finger Starter</h2>
             <div className="columns">
                 <p>
@@ -53,8 +58,8 @@ export default function Robot() {
                     It was rewarding to see the transition from a single working finger to a fully functional 
                     robotic hand capable of grasping and gesturing.
                 </p>
-                <video width="400" controls>
-                    <source src="/img/imgRobot/ArmFree.mp4" type="video/mp4" />
+                <video width="520" controls>
+                    <source src="/img/imgRobot/WorkingArm.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
             </div>
