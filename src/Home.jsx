@@ -5,7 +5,7 @@ import About from './components/About'
 import './App.css'
 
 const projects = [
-  { title: "Air Filter", image: "/img/imgGCE/GCELogo.png", to: "/projects/GCE", type: "hardware"},
+  { title: "Air Filter", image: "/img/imgGCE/GCELogo.png", to: "/projects/GCE", type: "both"},
   { title: "Robotic Arm", image: "/img/imgRobot/Arm.jpg", to: "/projects/Robot", type: "hardware"},
   { title: "Kitchen Chaos", image: "/img/imgKitchenChaos/KitchenChaos.png", to: "/projects/KitchenChaos", type: "software"},
   { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider", type: "software"},
