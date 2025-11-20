@@ -55,7 +55,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <img
-            src="/img/imghome/portfolio_no_background.png"
+            src="/img/imghome/HeadshotNoBackground.jpg"
             alt="Portrait"
           />
         </motion.div>
