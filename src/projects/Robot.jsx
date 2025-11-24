@@ -74,12 +74,12 @@ export default function Robot() {
             <h2 className="heading">Hand With Computer Vision</h2>
             <div className="columns">
                 <p>
-                    The next step was adding computer vision so that I could control
-                    the hand with my own hand. I did this by using the CV2 open library
-                    and tracking the 21 landmarks on the hand.
+                    Next, I added computer vision so I could control the robotic hand with my 
+                    own hand movements. Using the OpenCV (CV2) library, I tracked all 21 hand 
+                    landmarks to interpret finger positions.
                     <br/> <br/>
-                    It would then send a binary number from 00000 to 11111 where each
-                    finger represents a digit in the number. 0 meant that that finger
+                    It would then send a 5-bit binary number from 00000 to 11111 where each
+                    finger represents a bit in the number. A 0 meant that that finger
                     was closed where 1 means it was open.
                     <br/> <br/>
                     The fingers were strong enough to hold light objects (no more than a pound).
@@ -88,6 +88,31 @@ export default function Robot() {
                     <source src="/img/imgRobot/HandWithCV.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
+            </div>
+            
+            <h2 className="heading">GUI App</h2>
+            <p>
+                I integrated the computer-vision control into a Python GUI 
+                application, which displays the live camera feed, processes the 
+                hand-tracking data in real time, and sends the binary commands to 
+                the Arduino over serial communication. The interface was intentionally 
+                designed to be simple and intuitive so that anyone could easily control the hand. 
+                <br/><br/>
+                The application was built using the PySide library, where I created classes
+                and implemented OOD design to keep the interface modular. 
+                I used PySide’s QProperty system to neatly encapsulate state changes such 
+                as the current binary hand code and relied on signals and slots
+                to update the GUI in real time and transmit commands to the Arduino as soon 
+                as the computer-vision data changed.
+                <br/><br/>
+                To keep the interface responsive, I ran the computer-vision processing in a 
+                separate worker thread. The worker class handled the live camera feed and landmark 
+                detection in the background, while the main GUI class focused on rendering the 
+                interface and managing user interactions.
+            </p>
+            <div className="columns">
+                <img src="/img/imgRobot/HandApp.png" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/imgRobot/AppHandDetection.png" style={{ height: "400px", width: "auto" }}/>
             </div>
 
         </main>
