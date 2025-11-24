@@ -51,6 +51,10 @@ export default function Robot() {
 
             <h2 className="heading">Full Hand</h2>
             <div className="columns">
+                <video width="520" controls>
+                    <source src="/img/imgRobot/WorkingArm.mp4" type="video/mp4" />
+                    Cannot load video.
+                </video>
                 <p>
                     This was the full hand and forearm design, featuring multiple MG996R servo motors 
                     to control each finger and enable coordinated hand movements. For the power, I used
@@ -61,14 +65,7 @@ export default function Robot() {
                     Building this stage taught me how to integrate mechanical components with 
                     electronic control, manage cable routing for smooth motion, and calibrate servo positions 
                     for realistic articulation. <br/> <br/>
-                    
-                    It was rewarding to see the transition from a single working finger to a fully functional 
-                    robotic hand capable of grasping and gesturing.
                 </p>
-                <video width="520" controls>
-                    <source src="/img/imgRobot/WorkingArm.mp4" type="video/mp4" />
-                    Cannot load video.
-                </video>
             </div>
 
             <h2 className="heading">Hand With Computer Vision</h2>
