@@ -14,13 +14,23 @@ export default function GCE() {
 
         <div className="columns">
             <img src="/img/imgGCE/GCELogo.png" style={{ height: "150px", width: "auto" }} />
+            <div className="projectOverview">
+                    <h2>Project Overview</h2>
+                    <p>
+                    This project focuses on developing an automatic air filter pleat-separation 
+                    system, created collaboratively by a team of 12 engineers.
+                    </p>
+                </div>
         </div>
 
-        <h2 className='heading'>Problem Statement</h2>
+        <h2 className='heading'>The Problem</h2>
         <p>
-            The manual insertion of separators between pleats in GCE’s (Taiwanese based company) air filters currently takes 50–70 seconds per unit, creating a bottleneck in production.
-            Labor shortages have made this process increasingly difficult to scale, limiting the company’s ability to meet rising demand. <br/>
-            GCE is seeking an electromechanical solution to perform this task more quickly and consistently.<br/><br/>
+            The manual insertion of separators between pleats in GCE’s (Taiwanese based company) air filters currently 
+            takes 50–70 seconds per unit, creating a bottleneck in production. Labor shortages have made this process 
+            difficult to scale, limiting the company’s ability to meet rising demand. 
+            <br/>
+            GCE is seeking an electromechanical solution to perform this task more quickly and consistently.
+            <br/><br/>
             The objectives are to:
 
             <div className='columns'>
