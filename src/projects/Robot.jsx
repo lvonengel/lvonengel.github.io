@@ -9,12 +9,17 @@ export default function Robot() {
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
-                        This project followed the open-source InMoov robotic arm design. <br/>
+                        This project followed the open-source InMoov robotic arm design. 
+                        <br/>
                         I built and assembled the robotic arm myself, exploring every stage from 
-                        mechanical design and servo control to programming motor movements. <br/> <br/>
+                        mechanical design and servo control to programming motor movements. 
+                        <br/> <br/>
                         Through this project, I gained hands-on experience with 3D printing,
                         actuator calibration, and motion sequencing, as well as a deeper 
                         understanding of how sensors and servos interact to replicate human-like movement.
+                        <br/> <br/>
+                        Please check out my code in my GitHub.
+
                     </p>
                 </div>
             </div>
@@ -22,10 +27,12 @@ export default function Robot() {
             {/* Skills Learned */}
             <h2 className="heading">Skills Learned</h2>
             <p>Hardware: Arduino, PWM</p>
-            <p>Software: FDM 3D Printing</p>
+            <p>Software: CV2, FDM 3D Printing</p>
+            <p>Language: C++, Python</p>
             <br/> <br/>
 
             {/* Contribution */}
+            <h1>The Process</h1>
             <h2 className="heading">Finger Starter</h2>
             <div className="columns">
                 <p>
@@ -42,7 +49,7 @@ export default function Robot() {
                 </video>
             </div>
 
-            <h2 className="heading">Full Arm</h2>
+            <h2 className="heading">Full Hand</h2>
             <div className="columns">
                 <p>
                     This was the full hand and forearm design, featuring multiple MG996R servo motors 
@@ -63,7 +70,25 @@ export default function Robot() {
                     Cannot load video.
                 </video>
             </div>
-            
+
+            <h2 className="heading">Hand With Computer Vision</h2>
+            <div className="columns">
+                <p>
+                    The next step was adding computer vision so that I could control
+                    the hand with my own hand. I did this by using the CV2 open library
+                    and tracking the 21 landmarks on the hand.
+                    <br/> <br/>
+                    It would then send a binary number from 00000 to 11111 where each
+                    finger represents a digit in the number. 0 meant that that finger
+                    was closed where 1 means it was open.
+                    <br/> <br/>
+                    The fingers were strong enough to hold light objects (no more than a pound).
+                </p>
+                <video width="520" controls>
+                    <source src="/img/imgRobot/HandWithCV.mp4" type="video/mp4" />
+                    Cannot load video.
+                </video>
+            </div>
 
         </main>
     )
