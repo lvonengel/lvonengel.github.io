@@ -8,11 +8,11 @@ const projects = [
   { title: "Air Filter", image: "/img/imgGCE/GCELogoShort.png", to: "/projects/GCE", type: "both"},
   { title: "Robotic Arm", image: "/img/imgRobot/Arm.jpg", to: "/projects/Robot", type: "hardware"},
   { title: "Kitchen Chaos", image: "/img/imgKitchenChaos/KitchenChaos.png", to: "/projects/KitchenChaos", type: "software"},
-  { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider", type: "software"},
-  { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCrop.png", to: "/projects/PersonalPortfolio", type: "software"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy", type: "hardware"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal", type: "hardware"},
   { title: "Farmadillo", image: "/img/imgGreenhouse/FarmadilloLogo.png", to: "/projects/Farmadillo", type: "hardware"},
+  { title: "Portfolio", image: "/img/imgPersonalPortfolio/PersonalPortfolioCrop.png", to: "/projects/PersonalPortfolio", type: "software"},
+  { title: "Spider Robot", image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", to: "/projects/EmbeddedSpider", type: "software"},
   { title: "Music Box", image: "/img/imgMusicBox/MusicBoxLogo.png", to: "/projects/MusicBox", type: "software"},
 ];
 
