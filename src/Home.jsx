@@ -7,7 +7,7 @@ import './App.css'
 const projects = [
   { title: "Air Filter", image: "/img/imgGCE/GCELogoShort.png", to: "/projects/GCE", type: "both"},
   { title: "Robotic Arm", image: "/img/imgRobot/Arm.jpg", to: "/projects/Robot", type: "hardware"},
-  { title: "Kitchen Chaos", image: "/img/imgKitchenChaos/KitchenChaos.png", to: "/projects/KitchenChaos", type: "software"},
+  { title: "Kitchen Chaos", image: "/img/imgKitchenChaos/KitchenChaosMainMenuCropped.png", to: "/projects/KitchenChaos", type: "software"},
   { title: "RoboBuddy", image: "/img/imgRobobuddy/robobuddyLogo.png", to: "/projects/Robobuddy", type: "hardware"},
   { title: "Pill Pal", image: "/img/imgPillDispenser/PillPalLogo.png", to: "/projects/PillPal", type: "hardware"},
   { title: "Farmadillo", image: "/img/imgGreenhouse/FarmadilloLogo.png", to: "/projects/Farmadillo", type: "hardware"},

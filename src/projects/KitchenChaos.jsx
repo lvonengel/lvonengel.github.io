@@ -5,14 +5,18 @@ export default function KitchenChaos() {
             {/* Introduction */}
             <h1 className='title'>Kitchen Chaos</h1>
             <div class="columns">
-                <img src="/img/imgKitchenChaos/KitchenChaos.png" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/imgKitchenChaos/InGame.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
                         In my free time, I’ve been learning and experimenting with Unity by following a 
-                        tutorial called Kitchen Chaos. During this ongoing project, I've been exploring the 
-                        fundamentals of game development including event-driven programming, animation systems, 
-                        camera behavior, and player input.
+                        tutorial called Kitchen Chaos. <br/> <br/>
+                        During this ongoing project, I've been exploring the 
+                        fundamentals of game development including subscribers and listeners, event-driven programming,
+                        colliders, animation systems, camera behavior, and player input. <br/> <br/>
+                        <a href="https://play.unity.com/en/games/4f844095-bf08-4d68-8e09-d11a981a3ba0/kitchen-chaos" target="_blank" rel="noopener noreferrer">
+                            Click Here To Play The Full Game
+                        </a>
                     </p>
                 </div>
             </div>
@@ -23,7 +27,7 @@ export default function KitchenChaos() {
 
             {/* Contribution */}
             <h2 className="heading">Development Milestones</h2>
-            <p>Each step below highlights a new concept I learned and implemented as part of building this game.</p>
+            <p>Each step below highlights concepts I implemented as part of building this game.</p>
 
             <section className="schematic-section">
                 <div className="schematic-grid">
@@ -31,22 +35,37 @@ export default function KitchenChaos() {
                     {
                         src: "/img/imgKitchenChaos/HighlightsCounter.mp4",
                         title: "Highlighting Counters",
-                        desc: "Learned about raycasting and event handlers to detect when the player is facing an object."
+                        desc: "Raycasting and event handlers to detect when the player is facing an object."
                     },
                     {
                         src: "/img/imgKitchenChaos/PlaceFoodOnCounter.mp4",
                         title: "Placing Food on Counters",
-                        desc: "Implemented object management, prefabs, and interactions to spawn items."
+                        desc: "Object management, prefabs, and interactions to spawn items."
                     },
                     {
                         src: "/img/imgKitchenChaos/CuttingBoardWithFood.mp4",
                         title: "Cutting Food",
-                        desc: "Added animations, UI bar, and logic to allow players to place or cut food."
+                        desc: "Animations, UI bar, and logic to allow players to place or cut food."
                     },
                     {
                         src: "/img/imgKitchenChaos/StoveCookingAndBurning.mp4",
                         title: "Cooking and Burning Food",
-                        desc: "Added state machines and timers to cook/burn food."
+                        desc: "State machines and timers to cook/burn food."
+                    },
+                    {
+                        src: "/img/imgKitchenChaos/AddingFoodToPlate.mp4",
+                        title: "Plating and UI",
+                        desc: "Structs and image icons to show ingredients on plate."
+                    },
+                    {
+                        src: "/img/imgKitchenChaos/ServingFood.mp4",
+                        title: "Serving Food and Timer",
+                        desc: "Generating recipes and completing them."
+                    },
+                    {
+                        src: "/img/imgKitchenChaos/MainMenuAndRebinding.mp4",
+                        title: "Main Menu and Key Rebinding",
+                        desc: "State machine and player input systems."
                     },
                     ].map((video, idx) => (
                     <div className="schematic-card" key={idx}>
