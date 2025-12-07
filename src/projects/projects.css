@@ -13,6 +13,7 @@ video {
   display: flex;
   flex-direction: column;
   margin-left: 45px;
+  text-align: center;
 }
 
 .projectOverview h2 {
