@@ -13,7 +13,7 @@ export default function GCE() {
         <h1 className='title'>Autonomous Air Filter Separation</h1>
 
         <div className="columns">
-            <img src="/img/imgGCE/GCELogo.png" style={{ height: "150px", width: "auto" }} />
+            <img src="/img/imgGCE/GCEFinal.PNG" style={{ height: "400px", width: "auto" }} />
             <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -104,6 +104,9 @@ export default function GCE() {
                         </div>
                     ))}
                     </div>
+                    <h2 className="heading">Physical PCB</h2>
+                    <img src="/img/imgGCE/MainPCBFront.jpg" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/imgGCE/MainPCBBack.jpg" style={{ height: "400px", width: "auto" }}/>
                 </section>
 
                 {/* Opens larger picture when selected */}
@@ -123,7 +126,7 @@ export default function GCE() {
             <div class="software">
                 <h2>Image Processing</h2>
                 <div class="columns">
-                    <img src="/img/imgGCE/ImageProcessingExample.png" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/imgGCE/ImageProcessingExample.png" style={{ height: "450px", width: "auto" }}/>
                     <p>
                         Image processing was performed using an Arducam B0400 camera connected over SPI. 
                         After the lead screw separated the filter, the MCU captured an image 
@@ -149,19 +152,26 @@ export default function GCE() {
 
         {/* Final Result */}
         {activeSection == "result" && (
-            <div class="result">
-                <h2>This project is still ongoing and will be continuously updated.</h2>
-                <div class="columns">
-                    <img src="/img/imgGCE/MainPCBFront.jpg" style={{ height: "400px", width: "auto" }}/>
-                    <img src="/img/imgGCE/MainPCBBack.jpg" style={{ height: "400px", width: "auto" }}/>
+            <div className="result">
+
+                <div className="columns">
+                    <img src="/img/imgGCE/FinalLower.png" style={{ height: "400px", width: "auto" }}/>
                     <p>
-                        This served as the main control board. Our setup included three boards—one for 
+                        This served as the main control board. Our setup included three boards: one for 
                         input, one for output, and one acting as the central controller. The input board
-                            managed filter transport and alignment, while the output board handled pleat
-                            separation and comb insertion.
+                        managed filter transport and alignment, while the output board handled pleat
+                        separation and comb insertion.
                     </p>
                 </div>
-                
+                <div className="columns">
+                    <p>
+                        This is the pleat-separation stage of the system. A BLDC motor powers a 
+                        lead screw, and each pleat clips into the screw thread. The lead screw’s 
+                        pitch determines the spacing between pleats, ensuring consistent and 
+                        accurate separation.
+                    </p>
+                    <img src="/img/imgGCE/FinalTopView.jpg" style={{ height: "400px", width: "auto" }}/>
+                </div>
             </div>
 
         )}
