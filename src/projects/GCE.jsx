@@ -2,6 +2,9 @@ import { useState } from "react"
 import './projects.css'
 import PCBViewer from '../components/PCBViewer'
 
+const GCE_SLIDES_EMBED_URL =
+    "https://docs.google.com/presentation/d/1b_ouK8cO3UOaYBha5TpRkS9OlhQ9wV4mo2k3saKRWtI/embed?start=false&loop=false";
+
 export default function GCE() {
   const [selectedImage, setSelectedImage] = useState(null)
   const [activeSection, setActiveSection] = useState(null);
@@ -75,7 +78,7 @@ export default function GCE() {
 
         {/* Electrical Contributions */}
         {activeSection == "electrical" && (
-            <div class="electrical">
+            <div className="electrical">
                         {/* 3D Render */}
                 <h2>Main MCU PCB</h2>
                 <PCBViewer modelPath="/models/GCEPCB3D.glb"/>
@@ -123,9 +126,9 @@ export default function GCE() {
 
         {/* Software Contribution */}
         {activeSection == "software" && (
-            <div class="software">
+            <div className="software">
                 <h2>Image Processing</h2>
-                <div class="columns">
+                <div className="columns">
                     <img src="/img/imgGCE/ImageProcessingExample.png" style={{ height: "450px", width: "auto" }}/>
                     <p>
                         Image processing was performed using an Arducam B0400 camera connected over SPI. 
@@ -154,6 +157,17 @@ export default function GCE() {
         {activeSection == "result" && (
             <div className="result">
 
+                <h2 className="heading">Overview</h2>
+                <div className="slides-container">
+                    <iframe
+                        src={GCE_SLIDES_EMBED_URL}
+                        title="GCE Project Slides"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+
+                <h2 className="heading">Built Assembly</h2>
+
                 <div className="columns">
                     <img src="/img/imgGCE/FinalLower.png" style={{ height: "400px", width: "auto" }}/>
                     <p>
@@ -172,6 +186,24 @@ export default function GCE() {
                     </p>
                     <img src="/img/imgGCE/FinalTopView.jpg" style={{ height: "400px", width: "auto" }}/>
                 </div>
+
+                <h2 className="heading">Final Report</h2>
+                <p>
+                    This document was delivered to the client as the final reference, outlining 
+                    all design decisions and providing the information needed to confidently
+                    operate the system.
+                    <br/> <br/>
+                    The electrical design begins on page 12.
+                </p>
+                <div className="pdf-container">
+                    <iframe 
+                        src="/img/imgGCE/GCE_Hardware_Final_Report.pdf#zoom=100"
+                        title="GCE Final Report PDF"
+                    ></iframe>
+                </div>
+
+
+                
             </div>
 
         )}
