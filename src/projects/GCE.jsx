@@ -121,6 +121,15 @@ export default function GCE() {
                     </div>
                     </div>
                 )}
+
+                <h2 className="heading">Pleat Separation</h2>
+                <p>
+                    The lead screw was powered by a BLDC motor.
+                </p>
+                <video width="700" controls>
+                    <source src="/img/imgGCE/PleatSeparation.mp4" type="video/mp4" />
+                    Cannot load video.
+                </video>
             </div>
         )}
 
