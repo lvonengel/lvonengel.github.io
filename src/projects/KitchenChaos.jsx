@@ -9,13 +9,23 @@ export default function KitchenChaos() {
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
+                        <a href="https://play.unity.com/en/games/37192677-74ce-4619-bc19-984ecf092ae3/kitchen-chaos-multiplayer" target="_blank" rel="noopener noreferrer">
+                            Click Here To Play The Full Game
+                        </a>
+                        <br/><br/>
                         I’ve been learning and experimenting with Unity by following a 
                         tutorial called Kitchen Chaos. <br/> <br/>
                         During this project, I've been exploring the 
                         fundamentals of game development including subscribers and listeners, event-driven programming,
                         colliders, animation systems, camera behavior, relays, and host vs client authoritative. <br/> <br/>
-                        <a href="https://play.unity.com/en/games/37192677-74ce-4619-bc19-984ecf092ae3/kitchen-chaos-multiplayer" target="_blank" rel="noopener noreferrer">
-                            Click Here To Play The Full Game
+                        
+                        <a 
+                        href="https://github.com/lvonengel/KitchenChaosMultiplayer" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View Project on GitHub →
                         </a>
                     </p>
                 </div>

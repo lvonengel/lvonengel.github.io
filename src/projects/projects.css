@@ -169,3 +169,16 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.github-link {
+  display: inline-block;
+  font-size: 18px;
+  color: #4078c0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+  color: #305080;
+}

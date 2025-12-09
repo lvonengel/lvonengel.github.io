@@ -18,7 +18,14 @@ export default function Robot() {
                         actuator calibration, and motion sequencing, as well as a deeper 
                         understanding of how sensors and servos interact to replicate human-like movement.
                         <br/> <br/>
-                        Please check out my code in my GitHub.
+                        <a 
+                        href="https://github.com/lvonengel/Robot" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View Project on GitHub →
+                        </a>
 
                     </p>
                 </div>

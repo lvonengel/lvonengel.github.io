@@ -18,12 +18,12 @@ export default function GCE() {
         <div className="columns">
             <img src="/img/imgGCE/GCEFinal.PNG" style={{ height: "400px", width: "auto" }} />
             <div className="projectOverview">
-                    <h2>Project Overview</h2>
-                    <p>
-                    This project focuses on developing an automatic air filter pleat-separation 
-                    system, created collaboratively by a team of 12 engineers.
-                    </p>
-                </div>
+                <h2>Project Overview</h2>
+                <p>
+                This project focuses on developing an automatic air filter pleat-separation 
+                system, created collaboratively by a team of 12 engineers.
+                </p>
+            </div>
         </div>
 
         <h2 className='heading'>The Problem</h2>
