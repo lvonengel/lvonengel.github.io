@@ -7,7 +7,7 @@ export default function Farmadillo() {
     return (
         <main>
             <h1 className='title'>Farmadillo</h1>
-            <div class="columns">
+            <div className="columns">
                 <img src="/img/imgGreenhouse/FarmadilloLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className='projectOverview'>
                     <h2>Project Overview</h2>
@@ -51,20 +51,20 @@ export default function Farmadillo() {
 
             {/* Electrical Contributions */}
             {activeSection == "electrical" && (
-                <div class="electrical">
+                <div className="electrical">
                     <h2>The Dome</h2>
                     <p>
                         Programmed and controlled dual servos for dome actuation for a fully automated 
                         and responsive greenhouse environment
                     </p>
-                    <div class="columns">
+                    <div className="columns">
                         <img src="/img/imgGreenhouse/GreenhouseMaterial.png" style={{ height: "300px", width: "auto" }}/>
                         <img src="/img/imgGreenhouse/arrow.png" style={{ height: "300px", width: "auto" }}/>
                         <img src="/img/imgGreenhouse/CoverClosed.png" style={{ height: "300px", width: "auto" }}/>
                     </div>
 
                     {/* Video for Servos */}
-                    <div class="videoContainer">
+                    <div className="videoContainer">
                         <video width="400" controls>
                             <source src="/img/imgGreenhouse/servos.mp4" type="video/mp4" />
                             Cannot load video.
@@ -81,7 +81,7 @@ export default function Farmadillo() {
                     <p>
                         Programmed a lux and moisture sensor to fully automate the dome.
                     </p>
-                    <div class="columns">
+                    <div className="columns">
                     <figure>
                         <img src="/img/imgGreenhouse/LuxSensor.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
@@ -96,7 +96,7 @@ export default function Farmadillo() {
 
             {/* Software Contribution */}
             {activeSection == "software" && (
-                <div class="software">
+                <div className="software">
                     <h2>App Design</h2>
                     <p>
                         <a href="https://www.figma.com/proto/9EvpaHiCn66HPtarekhZex/Forge-App-Idea?node-id=0-1&t=56Wz9oQddgJ1smLV-1">Here </a> 
@@ -119,7 +119,7 @@ export default function Farmadillo() {
 
             {/* Final Result */}
             {activeSection == "result" && (
-                <div class="columns">
+                <div className="columns">
                     <img src="/img/imgGreenhouse/ControlBox.png" style={{ height: "300px", width: "auto" }}/>
                     <img src="/img/imgGreenhouse/FinalProduct.png" style={{ height: "300px", width: "auto" }}/>
                 </div>

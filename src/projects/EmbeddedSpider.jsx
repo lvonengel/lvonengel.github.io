@@ -3,7 +3,7 @@ export default function EmbeddedSpider() {
     return (
         <main>
             <h1 className='title'>Spider Robot</h1>
-            <div class="columns">
+            <div className="columns">
                 <img src="/img/imgEmbeddedSpider/embeddedSpider.jpg" style={{ height: "400px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>

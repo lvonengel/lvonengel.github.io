@@ -4,7 +4,7 @@ export default function Robot() {
         <main>
             {/* Introduction */}
             <h1 className='title'>Robotic Arm</h1>
-            <div class="columns">
+            <div className="columns">
                 <img src="/img/imgRobot/Arm.jpg" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>

@@ -61,7 +61,7 @@ export default function Robobuddy() {
                     <p>
                         The infrared sensor tracks the user's position to determine if they are working efficiently.
                     </p>
-                    <div class="columns">
+                    <div className="columns">
                         <img src="/img/imgRobobuddy/infraredSensor.png"style={{ height: "325px", width: "auto" }}/>
                         <video width="200" controls>
                             <source src="/img/imgRobobuddy/infraredSensor.mp4" type="video/mp4" />
@@ -74,7 +74,7 @@ export default function Robobuddy() {
                         The slider on the UI controls the speed of the motor. This is connected to the
                         diffuser to control the strength of the diffuser.
                     </p>
-                    <div class="columns">
+                    <div className="columns">
                         <img src="/img/imgRobobuddy/motorCircuit.png"style={{ height: "325px", width: "auto" }}/>
                         <video width="200" controls>
                             <source src="/img/imgRobobuddy/motorSlider.mp4" type="video/mp4" />
@@ -89,7 +89,7 @@ export default function Robobuddy() {
             {activeSection == "software" && (
                 <div classNameName="software">
                     <h2>Calendar Data</h2>
-                    <div class="columns">
+                    <div className="columns">
                         <img src="/img/imgRobobuddy/calendarRaspberryPi.png" style={{ height: "400px", width: "auto" }}/>
                         <img src="/img/imgGreenhouse/arrow.png" style={{ height: "150px", width: "auto" }}/>
                         <img src="/img/imgRobobuddy/calendarArduino.png" style={{ height: "400px", width: "auto" }}/>
@@ -104,7 +104,7 @@ export default function Robobuddy() {
                         </ol>
                     </div>
                     <h2>User Interface</h2>
-                    <div class="columns">
+                    <div className="columns">
                         <img src="/img/imgRobobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
                     </div>
 

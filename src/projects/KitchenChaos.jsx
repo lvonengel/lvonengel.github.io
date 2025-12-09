@@ -4,7 +4,7 @@ export default function KitchenChaos() {
         <main>
             {/* Introduction */}
             <h1 className='title'>Kitchen Chaos</h1>
-            <div class="columns">
+            <div className="columns">
                 <img src="/img/imgKitchenChaos/InGame.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
