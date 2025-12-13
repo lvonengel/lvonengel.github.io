@@ -123,7 +123,7 @@ export default function KitchenChaos() {
                     {
                         src: "/img/imgKitchenChaos/MultiplayerCharacterSelection.mp4",
                         title: "Joining Public Lobby",
-                        desc: "Authentication Service, Player Data"
+                        desc: "RPCs, Authentication Service, Player Data"
                     },
                     {
                         src: "/img/imgKitchenChaos/PrivateLobby.mp4",
