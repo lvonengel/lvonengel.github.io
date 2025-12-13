@@ -14,7 +14,7 @@ const experiences = [
   {
     title: "FPGA Firmware Engineer (Research Lab)",
     company: "Silicon Synapse Lab",
-    date: "March 2025 - Present",
+    date: "March 2025 - December 2025",
     image: "/img/imghome/Northeastern.png",
     link: "https://siliconsynapse.sites.northeastern.edu/",
   },
