@@ -17,6 +17,15 @@ export default function PillPal() {
                     makes taking medication with kids all the more safe and consistent. <br /> <br />
 
                     Pill Pal creates relationships with users so that they can build good habits early together.
+                    <br/><br/>
+                    <a 
+                        href="https://github.com/lvonengel/Forge-Pill-Pal" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View Project on GitHub →
+                        </a>
                     </p>
                 </div>
             </div>
