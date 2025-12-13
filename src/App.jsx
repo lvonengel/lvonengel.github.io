@@ -5,6 +5,7 @@ import NavigationBar from './components/NavigationBar';
 import Home from './Home';
 import GCE from './projects/GCE';
 import Robot from './projects/Robot'
+import StoreSimulator from './projects/StoreSimulator';
 import KitchenChaos from './projects/KitchenChaos';
 import PersonalPortfolio from './projects/PersonalPortfolio';
 import EmbeddedSpider from './projects/EmbeddedSpider';
@@ -26,6 +27,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/projects/GCE" element={<GCE/>}/>
       <Route path="/projects/Robot" element={<Robot/>}/>
+      <Route path="/projects/StoreSimulator" element={<StoreSimulator/>}/>
       <Route path="/projects/KitchenChaos" element={<KitchenChaos/>}/>
       <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider/>}/>
       <Route path="/projects/PersonalPortfolio" element={<PersonalPortfolio/>}/>
