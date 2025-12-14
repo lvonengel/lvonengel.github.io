@@ -9,13 +9,19 @@ export default function StoreSimulator() {
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
-                        <a href="https://play.unity.com/en/games/37192677-74ce-4619-bc19-984ecf092ae3/kitchen-chaos-multiplayer" target="_blank" rel="noopener noreferrer">
-                            Click Here To Play The Full Game
-                        </a>
                         <br/><br/>
                         My most recent Unity project has been creating a 3D store simulator where users
                         can manage prices and inventory, decorate their store, and upgrade furniture. <br/> <br/>
                         This project is still in progress and will be updated.
+                        <br/> <br/>
+                        <a 
+                        href="https://github.com/lvonengel/StoreSimulator" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View Project on GitHub →
+                        </a>
                     </p>
                 </div>
             </div>
