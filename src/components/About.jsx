@@ -39,9 +39,10 @@ export default function About() {
             I am a third-year Computer Engineer and Computer Science at Northeastern University from Cleveland, Ohio. 
             <br /> <br />
             Starting in middle school, when I built my first gaming PC, I've been passionate about engineering and technology. 
-            I've specifically loved product development, especially robotics where I can design and build systems 
+            I've specifically loved product development and robotics where I can design and build systems 
             that blend software and hardware into something people actually use. <br /> <br />
 
+            In my free time, I love to create video games (see in projects) and play tennis!
             Please feel free to check out my page!
           </motion.h1>
 
