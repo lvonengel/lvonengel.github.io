@@ -5,7 +5,7 @@ export default function StoreSimulator() {
             {/* Introduction */}
             <h1 className='title'>Store Simulator</h1>
             <div className="columns">
-                <img src="/img/imgStoreSimulator/OutsideShop.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgStoreSimulator/InsideStore.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
