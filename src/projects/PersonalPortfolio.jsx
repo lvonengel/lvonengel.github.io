@@ -11,10 +11,15 @@ export default function PersonalPortfolio() {
                     <p>
                     My most recent web development project has been updating my website portfolio. <br /> <br />
                     I originally coded my portfolio in HTML, CSS, and JS, but it looked outdated and unprofessional.
-                    For my new website, I used React and Vite to create a cleaner and friendlier design including animations. <br /> <br />
-                    <a href="https://github.com/lvonengel/Old-Website-Portfolio" target="_blank">
-                        Here is a link to my old website.
-                    </a>                    
+                    For my new website, I used React and Vite to create a cleaner and friendlier design including animations. <br /> <br /> 
+                    <a 
+                        href="https://github.com/lvonengel/lvonengel.github.io" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View New Website on GitHub →
+                        </a>              
                     </p>
                 </div>
             </div>
