@@ -79,6 +79,39 @@ export default function StoreSimulator() {
                     ))}
                 </div>
             </section>
+            {/* Additional Features */}
+            <h2>Additional Features</h2>
+            <p>
+                Once I got the basic store simulator cycle finished, I wanted to focus
+                on adding cool touches. Below are some of the features that I
+                 have implemented. 
+                <br/>
+            </p>
+            <section className="schematic-section">
+                <div className="schematic-grid">
+                    {[
+                    {
+                        src: "/img/imgStoreSimulator/BuyingWithCart.mp4",
+                        title: "Buying Items with a Cart",
+                        desc: "Creating a cart and delivery fee."
+                    },
+                    {
+                        src: "/img/imgStoreSimulator/UnlockingStockWithLevel.mp4",
+                        title: "Store Levl System",
+                        desc: "Unlocking stock with store level."
+                    },
+                    ].map((video, idx) => (
+                    <div className="schematic-card" key={idx}>
+                        <h3>{video.title}</h3>
+                        <p>{video.desc}</p>
+                        <video width="100%" controls>
+                        <source src={video.src} type="video/mp4" />
+                        Cannot load video.
+                        </video>
+                    </div>
+                    ))}
+                </div>
+            </section>
 
         </main>
     )
