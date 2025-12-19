@@ -202,7 +202,7 @@ export default function GCE() {
                     all design decisions and providing the information needed to confidently
                     operate the system.
                     <br/> <br/>
-                    The electrical design begins on page 12.
+                    The electrical design begins on page 13.
                 </p>
                 <div className="pdf-container">
                     <iframe 

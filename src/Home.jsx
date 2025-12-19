@@ -5,6 +5,7 @@ import About from './components/About'
 import './App.css'
 
 const projects = [
+  { title: "Pendar (Co-op)", image: "/img/imghome/pendar.png", to: "/projects/Pendar", type: "both"},
   { title: "Air Filter", image: "/img/imgGCE/KeyShotRender.png", to: "/projects/GCE", type: "both"},
   { title: "Robotic Arm", image: "/img/imgRobot/Arm.jpg", to: "/projects/Robot", type: "hardware"},
   { title: "Store Simulator", image: "/img/imgStoreSimulator/MainMenu.png", to: "/projects/StoreSimulator", type: "software"},

@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import ScrollManager from './components/ScrollManager';
 import NavigationBar from './components/NavigationBar';
 import Home from './Home';
+import Pendar from './projects/Pendar'
 import GCE from './projects/GCE';
 import Robot from './projects/Robot'
 import StoreSimulator from './projects/StoreSimulator';
@@ -25,6 +26,7 @@ function App() {
     <ScrollManager />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/projects/Pendar" element={<Pendar/>}/>
       <Route path="/projects/GCE" element={<GCE/>}/>
       <Route path="/projects/Robot" element={<Robot/>}/>
       <Route path="/projects/StoreSimulator" element={<StoreSimulator/>}/>
