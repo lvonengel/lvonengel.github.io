@@ -17,9 +17,6 @@ export default function StoreSimulator() {
                         My most recent Unity project has been creating a 3D store simulator where users
                         can manage prices and inventory, decorate their store, and upgrade furniture. 
                         <br/> <br/>
-                        This basic store simulator is infused with the ability to also collected trading
-                        card game (TCG) cards.
-                        <br/> <br/>
                         This project is still in progress and will be updated.
                         <br/> <br/>
                         <a 
@@ -221,6 +218,11 @@ export default function StoreSimulator() {
                                 src: "/img/imgStoreSimulator/PlayingGameWithTurn.mp4",
                                 title: "Turn System Against Enemy Cards",
                                 desc: "Attacking enemy cards and them attacking back."
+                            },
+                            {
+                                src: "/img/imgStoreSimulator/PlayingAgainstDifferentAI.mp4",
+                                title: "Full Game Against Multiple Types of AI",
+                                desc: "Menu screens with unique AI that have different strategies"
                             },
                             ].map((video, idx) => (
                             <div className="schematic-card" key={idx}>
