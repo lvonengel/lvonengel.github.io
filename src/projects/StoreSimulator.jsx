@@ -164,6 +164,16 @@ export default function StoreSimulator() {
                                 title: "Opening Card Packs",
                                 desc: "Collecting different cards."
                             },
+                            {
+                                src: "/img/imgStoreSimulator/CardBookInventory.mp4",
+                                title: "Card Inventory",
+                                desc: "Storing and seeing all cards collected"
+                            },
+                            {
+                                src: "/img/imgStoreSimulator/MultipleCardPacks.mp4",
+                                title: "Multiple Card Packs",
+                                desc: "Progress tracking for different card packs"
+                            },
                             ].map((video, idx) => (
                             <div className="schematic-card" key={idx}>
                                 <h3>{video.title}</h3>
