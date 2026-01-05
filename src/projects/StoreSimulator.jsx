@@ -174,6 +174,11 @@ export default function StoreSimulator() {
                                 title: "Multiple Card Packs",
                                 desc: "Progress tracking for different card packs"
                             },
+                            {
+                                src: "/img/imgStoreSimulator/CreatingCustomDecks.mp4",
+                                title: "Creating and Saving Custom Decks",
+                                desc: "Creating decks with cards the user has collected to play against AI"
+                            },
                             ].map((video, idx) => (
                             <div className="schematic-card" key={idx}>
                                 <h3>{video.title}</h3>
