@@ -127,6 +127,11 @@ export default function StoreSimulator() {
                                 title: "Upgrading Store Space",
                                 desc: "Unlocking more store space with licenses."
                             },
+                            {
+                                src: "/img/imgStoreSimulator/CreatedSaveSystem.mp4",
+                                title: "Creating 3 Save Profiles",
+                                desc: "Saves money, store upgrades, furniture, and stock."
+                            },
                             ].map((video, idx) => (
                             <div className="schematic-card" key={idx}>
                                 <h3>{video.title}</h3>
