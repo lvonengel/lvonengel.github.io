@@ -119,6 +119,32 @@ export default function Robot() {
                 <img src="/img/imgRobot/AppHandDetection.png" style={{ height: "400px", width: "auto" }}/>
             </div>
 
+            <h2 className="heading">EMG</h2>
+            <p>
+                The final thing I wanted to add was allowing the user to be able to control the
+                robotic arm with their own hand. By connecting three electrodes from my arm to the circuit,
+                I was able to track when the user created a fist with their hand.
+                <br/> <br/>
+                The circuit I designed was to get the EMG signal from the user's forearm through an instrumental
+                amplifier. It would then go through a high and low pass filter in order to
+                filter out the DC offset and electrical noise.
+            </p>
+            <div className="columns">
+                <img src="/img/imgRobot/ElectrodePlacement.jpeg" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/imgRobot/InstrumentalAmplifierCircuit.jpeg" style={{ height: "300px", width: "auto" }}/>
+            </div>
+            <p>
+                <br/>
+                The video below displays me testing just the instrument amplifier. I connected the output of the instrumental
+                amplifier to an analog pin on an Arduino board and plotted the voltage it received. In the video,
+                you can see it jump from 1000 mV to around 3000 mV when I put my hand in a fist.
+            </p>
+            <video width="800" controls>
+                <source src="/img/imgRobot/TestingWhenFistingHand.mp4" type="video/mp4" />
+                Cannot load video.
+            </video>
+
+
         </main>
     )
 }
