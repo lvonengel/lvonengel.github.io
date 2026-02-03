@@ -10,7 +10,17 @@ export default function EmbeddedSpider() {
                     <p>
                     This project used a DE1-SoC and DE10Nano-Soc to code and control a 6 legged spider.<br /> <br />  
                     I designed movement control logic in C++ for initialization and walking.
+                    <br/> <br/>
+                    <a 
+                        href="https://github.com/lvonengel/SpiderRobot" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                        >
+                            View Project on GitHub →
+                        </a>
                     </p>
+                    
                 </div>
             </div>
             <h2 className="heading">Skills Learned</h2>
