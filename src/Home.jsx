@@ -11,7 +11,7 @@ const projects = [
     to: "/projects/Pendar", 
     type: "both",
     desc: "A photonics co-op focused on automating spectrometer manufacturing and testing through a 6-DOF robot, computer vision, and image processing.",
-    tags: ["Robotics", "Multithreading", "CV", "KiCad"]
+    tags: ["Robotics", "Multithreading", "Python", "KiCad"]
   },
   { 
     title: "Air Filter", 
@@ -19,7 +19,7 @@ const projects = [
     to: "/projects/GCE", 
     type: "both",
     desc: "A custom air pleat separator mechanism for a global client, integrating PCB and iterative prototyping through real world constraints.",
-    tags: ["Altium PCB", "CV", "BLDC", "SPI Camera"]
+    tags: ["Altium", "Python", "CV2", "BLDC", "SPI"]
   },
   { 
     title: "Robotic Arm", 
@@ -27,7 +27,7 @@ const projects = [
     to: "/projects/Robot", 
     type: "hardware",
     desc: "A servo-controlled robotic arm with EMG sensor integration, computer vision, and adjustable motion control.",
-    tags: ["PWM", "EMG", "CV2", "FDM Printing"]
+    tags: ["Python", "EMG", "CV2", "FDM Printing"]
   },
   { 
     title: "Store Simulator", 
@@ -51,7 +51,7 @@ const projects = [
     to: "/projects/Robobuddy", 
     type: "hardware",
     desc: "Project lead for a desktop robot companion built around sensing, feedback, and an expressive face.",
-    tags: ["Raspberry Pi", "Linux", "LVGL"]
+    tags: ["Python", "Raspberry Pi", "Linux", "LVGL"]
   },
   { 
     title: "Pill Pal", 
@@ -83,7 +83,7 @@ const projects = [
     to: "/projects/EmbeddedSpider", 
     type: "software",
     desc: "A multi legged robot simulation that explores embedded control logic and coordinated motion.",
-    tags: ["C++", "Embedded", "Quartus"]
+    tags: ["C++", "Embedded", "Quartus", "MobaXterm"]
   },
   { 
     title: "Music Box", 
