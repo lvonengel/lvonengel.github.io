@@ -5,7 +5,7 @@ export default function PersonalPortfolio() {
             {/* Introduction */}
             <h1 className='title'>Website Portfolio</h1>
             <div className="columns">
-                <img src="/img/imgPersonalPortfolio/PersonalPortfolio.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/imgPersonalPortfolio/Website.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

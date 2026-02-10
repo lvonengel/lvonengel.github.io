@@ -10,23 +10,23 @@ const projects = [
     image: "/img/imghome/pendar.png", 
     to: "/projects/Pendar", 
     type: "both",
-    desc: "A photonics coop focused on automating spectrometer manufacturing and testing through a 6-DOF robot, computer vision, and image processing.",
-    tags: ["Robotics", "Python", "CV"]
+    desc: "A photonics co-op focused on automating spectrometer manufacturing and testing through a 6-DOF robot, computer vision, and image processing.",
+    tags: ["Robotics", "Multithreading", "CV", "KiCad"]
   },
   { 
     title: "Air Filter", 
     image: "/img/imgGCE/KeyShotRender.png", 
     to: "/projects/GCE", 
     type: "both",
-    desc: "A custom air pleat separator mechanism integrating PCB and iterative prototyping through real world constraints.",
-    tags: ["Altium PCB", "CV", "BLDC"]
+    desc: "A custom air pleat separator mechanism for a global client, integrating PCB and iterative prototyping through real world constraints.",
+    tags: ["Altium PCB", "CV", "BLDC", "SPI Camera"]
   },
   { 
     title: "Robotic Arm", 
     image: "/img/imgRobot/Arm.jpg", 
     to: "/projects/Robot", 
     type: "hardware",
-    desc: "A servo-controlled robotic arm with EMG sensor integration and tunable motion control.",
+    desc: "A servo-controlled robotic arm with EMG sensor integration, computer vision, and adjustable motion control.",
     tags: ["PWM", "EMG", "CV2", "FDM Printing"]
   },
   { 
@@ -34,7 +34,7 @@ const projects = [
     image: "/img/imgStoreSimulator/MainMenu.png", 
     to: "/projects/StoreSimulator", 
     type: "software",
-    desc: "A 3D Unity retail simulation featuring stocking inventory, pricing, and interactive environments.",
+    desc: "A 3D Unity retail simulation featuring stocking inventory, pricing, and card collections.",
     tags: ["Unity", "C#", "Animation"]
   },
   { 
@@ -59,7 +59,7 @@ const projects = [
     to: "/projects/PillPal", 
     type: "hardware",
     desc: "An automated pill dispenser designed for safety, authentication, and guided user interaction.",
-    tags: ["C++", "LVGL", "Servos"]
+    tags: ["C++", "LVGL", "Motors"]
   },
   { 
     title: "Farmadillo", 
@@ -71,7 +71,7 @@ const projects = [
   },
   { 
     title: "Portfolio", 
-    image: "/img/imgPersonalPortfolio/PersonalPortfolioCrop.png", 
+    image: "/img/imgPersonalPortfolio/Website.png", 
     to: "/projects/PersonalPortfolio", 
     type: "software",
     desc: "A responsive portfolio website built to showcase my engineering projects and skills.",
@@ -83,15 +83,15 @@ const projects = [
     to: "/projects/EmbeddedSpider", 
     type: "software",
     desc: "A multi legged robot simulation that explores embedded control logic and coordinated motion.",
-    tags: ["C++", "Embedded"]
+    tags: ["C++", "Embedded", "Quartus"]
   },
   { 
     title: "Music Box", 
     image: "/img/imgMusicBox/MusicBoxLogo.png", 
     to: "/projects/MusicBox", 
     type: "software",
-    desc: "An interactive and engaging website to showcase your latest favorite song through Spotify.",
-    tags: ["React"]
+    desc: "An interactive and engaging website to showcase your recent songs through Spotify.",
+    tags: ["React", "Spotify API", "CSS"]
   },
 ];
 
