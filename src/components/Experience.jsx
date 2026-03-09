@@ -5,6 +5,13 @@ import { useState } from "react";
 
 const experiences = [
   {
+    title: "Incoming Photonics Integrated Circuit Engineer",
+    company: "HyperLight Corp",
+    date: "May 2026 - December 2026",
+    image: "/img/imghome/HyperLight.png",
+    link: "https://hyperlightcorp.com/home/",
+  },
+  {
     title: "Photonics Automation Engineer",
     company: "Pendar Technologies",
     date: "July 2025 - December 2025",
