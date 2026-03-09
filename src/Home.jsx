@@ -7,7 +7,7 @@ import './App.css'
 const projects = [
   { 
     title: "Pendar (Co-op)", 
-    image: "/img/imghome/pendar.png", 
+    image: "/img/Home/pendar.png", 
     to: "/projects/Pendar", 
     type: "both",
     desc: "A photonics co-op focused on automating spectrometer manufacturing and testing through a 6-DOF robot, computer vision, and image processing.",
@@ -15,7 +15,7 @@ const projects = [
   },
   { 
     title: "Air Filter", 
-    image: "/img/imgGCE/KeyShotRender.png", 
+    image: "/img/GCE/KeyShotRender.png", 
     to: "/projects/GCE", 
     type: "both",
     desc: "A custom air pleat separator mechanism for a global client, integrating PCB and iterative prototyping through real world constraints.",
@@ -23,7 +23,7 @@ const projects = [
   },
   { 
     title: "Robotic Arm", 
-    image: "/img/imgRobot/Arm.jpg", 
+    image: "/img/Robot/Arm.jpg", 
     to: "/projects/Robot", 
     type: "hardware",
     desc: "A servo-controlled robotic arm with EMG sensor integration, computer vision, and adjustable motion control.",
@@ -31,7 +31,7 @@ const projects = [
   },
   { 
     title: "Store Simulator", 
-    image: "/img/imgStoreSimulator/MainMenu.png", 
+    image: "/img/StoreSimulator/MainMenu.png", 
     to: "/projects/StoreSimulator", 
     type: "software",
     desc: "A 3D Unity retail simulation featuring stocking inventory, pricing, and card collections.",
@@ -39,7 +39,7 @@ const projects = [
   },
   { 
     title: "Kitchen Chaos", 
-    image: "/img/imgKitchenChaos/KitchenChaosMainMenu.png", 
+    image: "/img/KitchenChaos/KitchenChaosMainMenu.png", 
     to: "/projects/KitchenChaos", 
     type: "software",
     desc: "A fast paced multiplayer Unity cooking game where coordination and timing are the difference between chaos and success.",
@@ -47,7 +47,7 @@ const projects = [
   },
   { 
     title: "RoboBuddy", 
-    image: "/img/imgRobobuddy/robobuddyLogo.png", 
+    image: "/img/Robobuddy/robobuddyLogo.png", 
     to: "/projects/Robobuddy", 
     type: "hardware",
     desc: "Project lead for a desktop robot companion built around sensing, feedback, and an expressive face.",
@@ -55,7 +55,7 @@ const projects = [
   },
   { 
     title: "Pill Pal", 
-    image: "/img/imgPillDispenser/PillPalLogo.png", 
+    image: "/img/PillDispenser/PillPalLogo.png", 
     to: "/projects/PillPal", 
     type: "hardware",
     desc: "An automated pill dispenser designed for safety, authentication, and guided user interaction.",
@@ -63,7 +63,7 @@ const projects = [
   },
   { 
     title: "Farmadillo", 
-    image: "/img/imgGreenhouse/FarmadilloLogo.png", 
+    image: "/img/Greenhouse/FarmadilloLogo.png", 
     to: "/projects/Farmadillo", 
     type: "hardware",
     desc: "An automated greenhouse system that responds to environmental data and keeps plants growing at optimal conditions.",
@@ -71,7 +71,7 @@ const projects = [
   },
   { 
     title: "Portfolio", 
-    image: "/img/imgPersonalPortfolio/Website.png", 
+    image: "/img/PersonalPortfolio/Website.png", 
     to: "/projects/PersonalPortfolio", 
     type: "software",
     desc: "A responsive portfolio website built to showcase my engineering projects and skills.",
@@ -79,7 +79,7 @@ const projects = [
   },
   { 
     title: "Spider Robot", 
-    image: "/img/imgEmbeddedSpider/embeddedSpider.jpg", 
+    image: "/img/EmbeddedSpider/embeddedSpider.jpg", 
     to: "/projects/EmbeddedSpider", 
     type: "software",
     desc: "A multi legged robot simulation that explores embedded control logic and coordinated motion.",
@@ -87,7 +87,7 @@ const projects = [
   },
   { 
     title: "Music Box", 
-    image: "/img/imgMusicBox/MusicBoxLogo.png", 
+    image: "/img/MusicBox/MusicBoxLogo.png", 
     to: "/projects/MusicBox", 
     type: "software",
     desc: "An interactive and engaging website to showcase your recent songs through Spotify.",

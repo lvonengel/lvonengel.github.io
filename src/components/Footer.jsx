@@ -12,10 +12,10 @@ export default function Footer() {
         </p>
         <div className="social-icons">
         <a href="https://www.linkedin.com/in/liu-von-engelbrechten/" target="_blank">
-            <img src="img/imghome/linkedin.png" style={{ height: "50px", width: "auto" }}/>
+            <img src="img/home/linkedin.png" style={{ height: "50px", width: "auto" }}/>
         </a>
         <a href="https://github.com/lvonengel" target="_blank">
-            <img src="img/imghome/github.png" style={{ height: "50px", width: "auto" }}/>
+            <img src="img/home/github.png" style={{ height: "50px", width: "auto" }}/>
         </a>
         </div>
     </footer>

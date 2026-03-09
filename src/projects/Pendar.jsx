@@ -4,7 +4,7 @@ export default function Pendar() {
         <main>
             <h1>Pendar Technologies</h1>
             <div className="columns">
-                <img src="/img/imghome/pendar.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/Home/pendar.png" style={{ height: "300px", width: "auto" }}/>
                 <p>
                     For my first co-op at Pendar Technologies, I worked on developing Python 
                     applications and image-processing algorithms for a 6-axis robot that
@@ -14,7 +14,7 @@ export default function Pendar() {
             </div>
             <h2>Co-op Presentation</h2>
             <iframe
-            src="/img/imgPendar/PendarCoopPresentation.pdf"
+            src="/img/Pendar/PendarCoopPresentation.pdf"
             width="100%"
             height="600px"
             title="PDF Presentation"

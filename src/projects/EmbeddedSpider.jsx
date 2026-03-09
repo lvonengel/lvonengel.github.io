@@ -4,7 +4,7 @@ export default function EmbeddedSpider() {
         <main>
             <h1 className='title'>Spider Robot</h1>
             <div className="columns">
-                <img src="/img/imgEmbeddedSpider/embeddedSpider.jpg" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/EmbeddedSpider/embeddedSpider.jpg" style={{ height: "400px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -29,13 +29,13 @@ export default function EmbeddedSpider() {
             
             <h2>Spider Moving</h2>
             <video width="400" controls>
-                <source src="/img/imgEmbeddedSpider/spiderMoving.mp4" type="video/mp4" />
+                <source src="/img/EmbeddedSpider/spiderMoving.mp4" type="video/mp4" />
                 Cannot load video.
             </video>
 
             <h2>Spider Moving With a Sensor</h2>
             <video width="400" controls>
-                <source src="/img/imgEmbeddedSpider/SpiderWithSensor.mp4" type="video/mp4" />
+                <source src="/img/EmbeddedSpider/SpiderWithSensor.mp4" type="video/mp4" />
                 Cannot load video.
             </video>
 

@@ -1,7 +1,7 @@
 # Liu von Engelbrechten's Personal Portfolio Website
 # https://lvonengel.github.io/
 
-<img src="public/img/imgPersonalPortfolio/Website.png" height="300"/>
+<img src="public/img/PersonalPortfolio/Website.png" height="300"/>
 
 
 Welcome to my personal portfolio website! This site highlights my projects, experiences, and interests across engineering, product development, and creative work. It serves as a central place to explore what I am building, learning, and passionate about, all in an interactive and easy to navigate format.

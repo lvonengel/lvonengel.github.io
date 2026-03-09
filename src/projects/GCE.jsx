@@ -16,7 +16,7 @@ export default function GCE() {
         <h1 className='title'>Autonomous Air Filter Separation</h1>
 
         <div className="columns">
-            <img src="/img/imgGCE/GCEFinal.PNG" style={{ height: "400px", width: "auto" }} />
+            <img src="/img/GCE/GCEFinal.PNG" style={{ height: "400px", width: "auto" }} />
             <div className="projectOverview">
                 <h2>Project Overview</h2>
                 <p>
@@ -93,9 +93,9 @@ export default function GCE() {
 
                     <div className="schematic-grid">
                     {[
-                        { src: "/img/imgGCE/MainPCBPower.png", label: "Power regulation"},
-                        { src: "/img/imgGCE/MainPCBMCU.png", label: "32-bit ARM Cortex-M33 MCU" },
-                        { src: "/img/imgGCE/MainPCBCAN.png", label: "CAN" },
+                        { src: "/img/GCE/MainPCBPower.png", label: "Power regulation"},
+                        { src: "/img/GCE/MainPCBMCU.png", label: "32-bit ARM Cortex-M33 MCU" },
+                        { src: "/img/GCE/MainPCBCAN.png", label: "CAN" },
                     ].map((item, idx) => (
                         <div
                         key={idx}
@@ -108,8 +108,8 @@ export default function GCE() {
                     ))}
                     </div>
                     <h2 className="heading">Physical PCB</h2>
-                    <img src="/img/imgGCE/MainPCBFront.jpg" style={{ height: "400px", width: "auto" }}/>
-                    <img src="/img/imgGCE/MainPCBBack.jpg" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/GCE/MainPCBFront.jpg" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/GCE/MainPCBBack.jpg" style={{ height: "400px", width: "auto" }}/>
                 </section>
 
                 {/* Opens larger picture when selected */}
@@ -127,7 +127,7 @@ export default function GCE() {
                     The lead screw was powered by a BLDC motor.
                 </p>
                 <video width="700" controls>
-                    <source src="/img/imgGCE/PleatSeparation.mp4" type="video/mp4" />
+                    <source src="/img/GCE/PleatSeparation.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
             </div>
@@ -138,7 +138,7 @@ export default function GCE() {
             <div className="software">
                 <h2>Image Processing</h2>
                 <div className="columns">
-                    <img src="/img/imgGCE/ImageProcessingExample.png" style={{ height: "450px", width: "auto" }}/>
+                    <img src="/img/GCE/ImageProcessingExample.png" style={{ height: "450px", width: "auto" }}/>
                     <p>
                         Image processing was performed using an Arducam B0400 camera connected over SPI. 
                         After the lead screw separated the filter, the MCU captured an image 
@@ -178,7 +178,7 @@ export default function GCE() {
                 <h2 className="heading">Built Assembly</h2>
 
                 <div className="columns">
-                    <img src="/img/imgGCE/FinalLower.png" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/GCE/FinalLower.png" style={{ height: "400px", width: "auto" }}/>
                     <p>
                         This served as the main control board. Our setup included three boards: one for 
                         input, one for output, and one acting as the central controller. The input board
@@ -193,7 +193,7 @@ export default function GCE() {
                         pitch determines the spacing between pleats, ensuring consistent and 
                         accurate separation.
                     </p>
-                    <img src="/img/imgGCE/FinalTopView.jpg" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/GCE/FinalTopView.jpg" style={{ height: "400px", width: "auto" }}/>
                 </div>
 
                 <h2 className="heading">Final Report</h2>
@@ -206,7 +206,7 @@ export default function GCE() {
                 </p>
                 <div className="pdf-container">
                     <iframe 
-                        src="/img/imgGCE/GCE_Hardware_Final_Report.pdf#zoom=100"
+                        src="/img/GCE/GCE_Hardware_Final_Report.pdf#zoom=100"
                         title="GCE Final Report PDF"
                     ></iframe>
                 </div>

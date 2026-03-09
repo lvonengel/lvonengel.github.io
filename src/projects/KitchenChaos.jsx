@@ -9,7 +9,7 @@ export default function KitchenChaos() {
             {/* Introduction */}
             <h1 className='title'>Kitchen Chaos</h1>
             <div className="columns">
-                <img src="/img/imgKitchenChaos/InGame.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/KitchenChaos/InGame.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -72,37 +72,37 @@ export default function KitchenChaos() {
                         <div className="schematic-grid">
                             {[
                             {
-                                src: "/img/imgKitchenChaos/HighlightsCounter.mp4",
+                                src: "/img/KitchenChaos/HighlightsCounter.mp4",
                                 title: "Highlighting Counters",
                                 desc: "Raycasting and event handlers to detect when the player is facing an object."
                             },
                             {
-                                src: "/img/imgKitchenChaos/PlaceFoodOnCounter.mp4",
+                                src: "/img/KitchenChaos/PlaceFoodOnCounter.mp4",
                                 title: "Placing Food on Counters",
                                 desc: "Object management, prefabs, and interactions to spawn items."
                             },
                             {
-                                src: "/img/imgKitchenChaos/CuttingBoardWithFood.mp4",
+                                src: "/img/KitchenChaos/CuttingBoardWithFood.mp4",
                                 title: "Cutting Food",
                                 desc: "Animations, UI bar, and logic to allow players to place or cut food."
                             },
                             {
-                                src: "/img/imgKitchenChaos/StoveCookingAndBurning.mp4",
+                                src: "/img/KitchenChaos/StoveCookingAndBurning.mp4",
                                 title: "Cooking and Burning Food",
                                 desc: "State machines and timers to cook/burn food."
                             },
                             {
-                                src: "/img/imgKitchenChaos/AddingFoodToPlate.mp4",
+                                src: "/img/KitchenChaos/AddingFoodToPlate.mp4",
                                 title: "Plating and UI",
                                 desc: "Structs and image icons to show ingredients on plate."
                             },
                             {
-                                src: "/img/imgKitchenChaos/ServingFood.mp4",
+                                src: "/img/KitchenChaos/ServingFood.mp4",
                                 title: "Serving Food and Timer",
                                 desc: "Generating recipes and completing them."
                             },
                             {
-                                src: "/img/imgKitchenChaos/MainMenuAndRebinding.mp4",
+                                src: "/img/KitchenChaos/MainMenuAndRebinding.mp4",
                                 title: "Main Menu and Key Rebinding",
                                 desc: "State machine and player input systems."
                             },
@@ -144,17 +144,17 @@ export default function KitchenChaos() {
                         <div className="schematic-grid">
                             {[
                             {
-                                src: "/img/imgKitchenChaos/SyncingGameState.mp4",
+                                src: "/img/KitchenChaos/SyncingGameState.mp4",
                                 title: "Syncing Game State",
                                 desc: "Network Behavior/Variable, Client vs Server Authoritative."
                             },
                             {
-                                src: "/img/imgKitchenChaos/MultiplayerCharacterSelection.mp4",
+                                src: "/img/KitchenChaos/MultiplayerCharacterSelection.mp4",
                                 title: "Joining Public Lobby",
                                 desc: "RPCs, Authentication Service, Player Data"
                             },
                             {
-                                src: "/img/imgKitchenChaos/PrivateLobby.mp4",
+                                src: "/img/KitchenChaos/PrivateLobby.mp4",
                                 title: "Joining Private Lobbies",
                                 desc: "Authentication Service, Relay, Lobby UI"
                             },

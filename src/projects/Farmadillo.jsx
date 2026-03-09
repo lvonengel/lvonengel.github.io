@@ -8,7 +8,7 @@ export default function Farmadillo() {
         <main>
             <h1 className='title'>Farmadillo</h1>
             <div className="columns">
-                <img src="/img/imgGreenhouse/FarmadilloLogo.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/Greenhouse/FarmadilloLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className='projectOverview'>
                     <h2>Project Overview</h2>
                     <p>
@@ -58,20 +58,20 @@ export default function Farmadillo() {
                         and responsive greenhouse environment
                     </p>
                     <div className="columns">
-                        <img src="/img/imgGreenhouse/GreenhouseMaterial.png" style={{ height: "300px", width: "auto" }}/>
-                        <img src="/img/imgGreenhouse/arrow.png" style={{ height: "300px", width: "auto" }}/>
-                        <img src="/img/imgGreenhouse/CoverClosed.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/GreenhouseMaterial.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/arrow.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/CoverClosed.png" style={{ height: "300px", width: "auto" }}/>
                     </div>
 
                     {/* Video for Servos */}
                     <div className="videoContainer">
                         <video width="400" controls>
-                            <source src="/img/imgGreenhouse/servos.mp4" type="video/mp4" />
+                            <source src="/img/Greenhouse/servos.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
 
                         <video width="400" controls>
-                            <source src="/img/imgGreenhouse/servoWithCover.mp4" type="video/mp4" />
+                            <source src="/img/Greenhouse/servoWithCover.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
                     </div>
@@ -83,11 +83,11 @@ export default function Farmadillo() {
                     </p>
                     <div className="columns">
                     <figure>
-                        <img src="/img/imgGreenhouse/LuxSensor.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/LuxSensor.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
 
                     <figure>
-                        <img src="/img/imgGreenhouse/MoistureSensor.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/MoistureSensor.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
                     </div>
 
@@ -103,7 +103,7 @@ export default function Farmadillo() {
                         is an outline of the app created in Figma. In this app, the user can store different plant profiles that require
                         different amount of sunlight.
                     </p>
-                    <img src="/img/imgGreenhouse/OutlineFigma.png" style={{ height: "300px", width: "auto" }}/>
+                    <img src="/img/Greenhouse/OutlineFigma.png" style={{ height: "300px", width: "auto" }}/>
 
                     {/* LCD Screen */}
                     <h2>LCD Screen</h2>
@@ -112,7 +112,7 @@ export default function Farmadillo() {
                         plant protection by dynamically opening and closing a dome based on sunlight and soil moisture levels
                     </p>
                     <figure>
-                        <img src="/img/imgGreenhouse/LCDScreen.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/LCDScreen.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
                 </div>
             )}
@@ -120,8 +120,8 @@ export default function Farmadillo() {
             {/* Final Result */}
             {activeSection == "result" && (
                 <div className="columns">
-                    <img src="/img/imgGreenhouse/ControlBox.png" style={{ height: "300px", width: "auto" }}/>
-                    <img src="/img/imgGreenhouse/FinalProduct.png" style={{ height: "300px", width: "auto" }}/>
+                    <img src="/img/Greenhouse/ControlBox.png" style={{ height: "300px", width: "auto" }}/>
+                    <img src="/img/Greenhouse/FinalProduct.png" style={{ height: "300px", width: "auto" }}/>
                 </div>
 
             )}

@@ -9,7 +9,7 @@ export default function PillPal() {
             {/* Introduction */}
             <h1 className="title">Pill Pal</h1>
             <div className="columns">
-                <img src="/img/imgPillDispenser/PillPalLogo.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/PillDispenser/PillPalLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -63,7 +63,7 @@ export default function PillPal() {
                     <h2>Block Diagram</h2>
 
                     <div className="columns">
-                    <img src="/img/imgPillDispenser/BlockDiagram.png" style={{ height: "400px", width: "auto" }}/>
+                    <img src="/img/PillDispenser/BlockDiagram.png" style={{ height: "400px", width: "auto" }}/>
                     <p>
                         Here is a block diagram that was used to create an outline of our electrical components
                     </p>
@@ -80,10 +80,10 @@ export default function PillPal() {
                     </div>
                     <div className="columns">
                     <figure>
-                        <img src="/img/imgPillDispenser/GigaR1Fingerprint.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/PillDispenser/GigaR1Fingerprint.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
                     <figure>
-                        <img src="/img/imgPillDispenser/GigaR1Stepper.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/PillDispenser/GigaR1Stepper.png" style={{ height: "300px", width: "auto" }}/>
                     </figure>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default function PillPal() {
                     <h2>Figma Outline</h2>
 
                     <div className="columns">
-                        <img src="/img/imgPillDispenser/FigmaOutline.png" style={{ height: "325px", width: "auto" }}/>
+                        <img src="/img/PillDispenser/FigmaOutline.png" style={{ height: "325px", width: "auto" }}/>
                         <p>
                             Here is the initial wirefame made in Figma for the LCD UI
                         </p>
@@ -113,11 +113,11 @@ export default function PillPal() {
                     <div className="columns">
                         <div className="videoContainer">
                             <video width="400" controls>
-                                <source src="/img/imgPillDispenser/ContactCaretaker.mp4" type="video/mp4" />
+                                <source src="/img/PillDispenser/ContactCaretaker.mp4" type="video/mp4" />
                                 Cannot load video.
                             </video>
                             <video width="400" controls>
-                                <source src="/img/imgPillDispenser/UIStyle.mp4" type="video/mp4" />
+                                <source src="/img/PillDispenser/UIStyle.mp4" type="video/mp4" />
                                 Cannot load video.
                             </video>
 
@@ -139,17 +139,17 @@ export default function PillPal() {
 
                     <div className="videoContainer">
                         <video width="400" controls>
-                            <source src="/img/imgPillDispenser/EditPillAmount.mp4" type="video/mp4" />
+                            <source src="/img/PillDispenser/EditPillAmount.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
 
                         <video width="400" controls>
-                            <source src="/img/imgPillDispenser/Dispense.mp4" type="video/mp4" />
+                            <source src="/img/PillDispenser/Dispense.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
 
                         <video width="400" controls>
-                            <source src="/img/imgPillDispenser/WrongFingerprint.mp4" type="video/mp4" />
+                            <source src="/img/PillDispenser/WrongFingerprint.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
                     </div>

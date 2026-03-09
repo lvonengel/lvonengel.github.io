@@ -10,7 +10,7 @@ export default function Robobuddy() {
             {/* Introduction */}
             <h1 className="title">RoboBuddy</h1>
             <div className="columns">
-                <img src="/img/imgRobobuddy/robobuddyLogo.png" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/Robobuddy/robobuddyLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -62,9 +62,9 @@ export default function Robobuddy() {
                         The infrared sensor tracks the user's position to determine if they are working efficiently.
                     </p>
                     <div className="columns">
-                        <img src="/img/imgRobobuddy/infraredSensor.png"style={{ height: "325px", width: "auto" }}/>
+                        <img src="/img/Robobuddy/infraredSensor.png"style={{ height: "325px", width: "auto" }}/>
                         <video width="200" controls>
-                            <source src="/img/imgRobobuddy/infraredSensor.mp4" type="video/mp4" />
+                            <source src="/img/Robobuddy/infraredSensor.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
                     </div>
@@ -75,9 +75,9 @@ export default function Robobuddy() {
                         diffuser to control the strength of the diffuser.
                     </p>
                     <div className="columns">
-                        <img src="/img/imgRobobuddy/motorCircuit.png"style={{ height: "325px", width: "auto" }}/>
+                        <img src="/img/Robobuddy/motorCircuit.png"style={{ height: "325px", width: "auto" }}/>
                         <video width="200" controls>
-                            <source src="/img/imgRobobuddy/motorSlider.mp4" type="video/mp4" />
+                            <source src="/img/Robobuddy/motorSlider.mp4" type="video/mp4" />
                             Cannot load video.
                         </video>
                     </div>
@@ -90,9 +90,9 @@ export default function Robobuddy() {
                 <div classNameName="software">
                     <h2>Calendar Data</h2>
                     <div className="columns">
-                        <img src="/img/imgRobobuddy/calendarRaspberryPi.png" style={{ height: "400px", width: "auto" }}/>
-                        <img src="/img/imgGreenhouse/arrow.png" style={{ height: "150px", width: "auto" }}/>
-                        <img src="/img/imgRobobuddy/calendarArduino.png" style={{ height: "400px", width: "auto" }}/>
+                        <img src="/img/Robobuddy/calendarRaspberryPi.png" style={{ height: "400px", width: "auto" }}/>
+                        <img src="/img/Greenhouse/arrow.png" style={{ height: "150px", width: "auto" }}/>
+                        <img src="/img/Robobuddy/calendarArduino.png" style={{ height: "400px", width: "auto" }}/>
                     </div>
 
                     <div className='columns'>
@@ -105,7 +105,7 @@ export default function Robobuddy() {
                     </div>
                     <h2>User Interface</h2>
                     <div className="columns">
-                        <img src="/img/imgRobobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
+                        <img src="/img/Robobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
                     </div>
 
                 </div>
@@ -113,7 +113,7 @@ export default function Robobuddy() {
 
             {/* Final Result */}
             {activeSection == "result" && (
-                <img src="/img/imgRobobuddy/robobuddyFinal.jpg" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/Robobuddy/robobuddyFinal.jpg" style={{ height: "400px", width: "auto" }}/>
             )}
 
 

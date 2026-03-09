@@ -5,7 +5,7 @@ export default function Robot() {
             {/* Introduction */}
             <h1 className='title'>Robotic Arm</h1>
             <div className="columns">
-                <img src="/img/imgRobot/Arm.jpg" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/Robot/Arm.jpg" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
@@ -51,7 +51,7 @@ export default function Robot() {
                     on to the more complex hand and arm assemblies.
                 </p>
                 <video width="400" controls>
-                    <source src="/img/imgRobot/FingerStarter.mp4" type="video/mp4" />
+                    <source src="/img/Robot/FingerStarter.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
             </div>
@@ -59,7 +59,7 @@ export default function Robot() {
             <h2 className="heading">Full Hand</h2>
             <div className="columns">
                 <video width="520" controls>
-                    <source src="/img/imgRobot/WorkingArm.mp4" type="video/mp4" />
+                    <source src="/img/Robot/WorkingArm.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
                 <p>
@@ -89,7 +89,7 @@ export default function Robot() {
                     The fingers were strong enough to hold light objects (no more than a pound).
                 </p>
                 <video width="520" controls>
-                    <source src="/img/imgRobot/HandWithCV.mp4" type="video/mp4" />
+                    <source src="/img/Robot/HandWithCV.mp4" type="video/mp4" />
                     Cannot load video.
                 </video>
             </div>
@@ -115,8 +115,8 @@ export default function Robot() {
                 interface and managing user interactions.
             </p>
             <div className="columns">
-                <img src="/img/imgRobot/HandApp.png" style={{ height: "400px", width: "auto" }}/>
-                <img src="/img/imgRobot/AppHandDetection.png" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/Robot/HandApp.png" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/Robot/AppHandDetection.png" style={{ height: "400px", width: "auto" }}/>
             </div>
 
             <h2 className="heading">EMG</h2>
@@ -130,8 +130,8 @@ export default function Robot() {
                 filter out the DC offset and electrical noise.
             </p>
             <div className="columns">
-                <img src="/img/imgRobot/ElectrodePlacement.jpeg" style={{ height: "400px", width: "auto" }}/>
-                <img src="/img/imgRobot/InstrumentalAmplifierCircuit.jpeg" style={{ height: "300px", width: "auto" }}/>
+                <img src="/img/Robot/ElectrodePlacement.jpeg" style={{ height: "400px", width: "auto" }}/>
+                <img src="/img/Robot/InstrumentalAmplifierCircuit.jpeg" style={{ height: "300px", width: "auto" }}/>
             </div>
             <p>
                 <br/>
@@ -140,7 +140,7 @@ export default function Robot() {
                 you can see it jump from 1000 mV to around 3000 mV when I put my hand in a fist.
             </p>
             <video width="800" controls>
-                <source src="/img/imgRobot/TestingWhenFistingHand.mp4" type="video/mp4" />
+                <source src="/img/Robot/TestingWhenFistingHand.mp4" type="video/mp4" />
                 Cannot load video.
             </video>
 
