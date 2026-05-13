@@ -1,19 +1,20 @@
 import {Routes, Route} from 'react-router-dom'
 
-import ScrollManager from './components/ScrollManager';
-import NavigationBar from './components/NavigationBar';
-import Home from './Home';
+import ScrollManager from './components/ScrollManager'
+import NavigationBar from './components/NavigationBar'
+import Home from './Home'
+import RiverGauge from './projects/RiverGauge'
 import Pendar from './projects/Pendar'
-import GCE from './projects/GCE';
+import GCE from './projects/GCE'
 import Robot from './projects/Robot'
-import StoreSimulator from './projects/StoreSimulator';
-import KitchenChaos from './projects/KitchenChaos';
-import PersonalPortfolio from './projects/PersonalPortfolio';
-import EmbeddedSpider from './projects/EmbeddedSpider';
+import StoreSimulator from './projects/StoreSimulator'
+import KitchenChaos from './projects/KitchenChaos'
+import PersonalPortfolio from './projects/PersonalPortfolio'
+import EmbeddedSpider from './projects/EmbeddedSpider'
 import Robobuddy from './projects/Robobuddy'
 import PillPal from './projects/PillPal'
 import Farmadillo from './projects/Farmadillo'
-import MusicBox from './projects/MusicBox';
+import MusicBox from './projects/MusicBox'
 import Footer from './components/Footer'
 
 import './App.css'
@@ -26,6 +27,7 @@ function App() {
     <ScrollManager />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/projects/RiverGauge" element={<RiverGauge/>}/>
       <Route path="/projects/Pendar" element={<Pendar/>}/>
       <Route path="/projects/GCE" element={<GCE/>}/>
       <Route path="/projects/Robot" element={<Robot/>}/>

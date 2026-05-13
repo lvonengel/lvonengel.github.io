@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const experiences = [
   {
-    title: "Incoming Photonics Integrated Circuit Engineer",
+    title: "Photonics Integrated Circuit Engineer",
     company: "HyperLight Corp",
     date: "May 2026 - December 2026",
     image: "/img/Home/HyperLight.png",
