@@ -1,4 +1,3 @@
-
 .experience-icon {
   width: 100%;
   height: 100%;
@@ -10,18 +9,24 @@
 .experience-link {
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s ease;
 }
 
+/* same hover gray as the navigation bar links */
+.experience-link:hover {
+  color: #555;
+}
 
 .vertical-timeline-element-content {
-  background: bisque;
+  background: #dbeef5;
   color: #000;
 }
 
-
 .vertical-timeline--animate .vertical-timeline-element-content,
 .vertical-timeline--animate .vertical-timeline-element-icon {
-  transition: transform 600ms ease, opacity 600ms ease;
+  transition:
+    transform 600ms ease,
+    opacity 600ms ease;
   will-change: transform, opacity;
 }
 
@@ -36,13 +41,17 @@
 /* slides left out to left, and right out to right */
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns.vertical-timeline--animate
-    .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+    .vertical-timeline-element:nth-child(even):not(
+      .vertical-timeline-element--left
+    )
     .vertical-timeline-element-content.is-hidden,
   .vertical-timeline--two-columns.vertical-timeline--animate
     .vertical-timeline-element.vertical-timeline-element--right
     .vertical-timeline-element-content.is-hidden,
   .vertical-timeline--two-columns.vertical-timeline--animate
-    .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+    .vertical-timeline-element:nth-child(even):not(
+      .vertical-timeline-element--left
+    )
     .vertical-timeline-element-icon.is-hidden,
   .vertical-timeline--two-columns.vertical-timeline--animate
     .vertical-timeline-element.vertical-timeline-element--right

@@ -122,7 +122,7 @@ function Home() {
       </section>
 
       <section id="projects" className="projects">
-        <h1>Projects</h1>
+        <h1 className="section-title">Projects</h1>
         <div className="filter-buttons">
           <button
             className={filter === "all" ? "active" : ""}
@@ -158,7 +158,7 @@ function Home() {
       </section>
 
       <section id="timeline">
-        <h1>Work Experience</h1>
+        <h1 className="section-title">Work Experience</h1>
         <Experience />
       </section>
     </>

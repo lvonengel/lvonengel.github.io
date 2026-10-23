@@ -46,7 +46,9 @@ html {
   scroll-behavior: smooth;
 }
 
-#home, #about, #projects {
+#home,
+#about,
+#projects {
   scroll-margin-top: 80px;
 }
 
@@ -55,9 +57,51 @@ section {
 }
 
 #timeline {
-  padding-top: 80px;
+  padding-top: 128px;
 }
 
 .projects {
-  padding-top: 3rem;
+  padding-top: 10rem;
+}
+.section-title {
+  max-width: 1136px;
+  margin: 0 auto 40px;
+  font-size: 44px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1136px;
+  margin: 0 auto 40px;
+}
+
+.projects .filter-buttons button {
+  width: auto;
+  margin: 0;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.projects .filter-buttons button:hover {
+  border-color: black;
+}
+
+.projects .filter-buttons button.active {
+  background: black;
+  border-color: black;
+  color: white;
 }
