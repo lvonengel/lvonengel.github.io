@@ -1,5 +1,6 @@
 import './projects.css'
 import { useState } from "react";
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function StoreSimulator() {
     const [activeSection, setActiveSection] = useState(null);
@@ -7,9 +8,14 @@ export default function StoreSimulator() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className='title'>Store Simulator</h1>
+            <ProjectHeader
+                title="Store Simulator"
+                image="/img/StoreSimulator/InsideStore.png"
+                role="Solo developer"
+                timeline="November 2025 – February 2026"
+                tools={["Unity", "C#", "Animation"]}
+            />
             <div className="columns">
-                <img src="/img/StoreSimulator/InsideStore.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

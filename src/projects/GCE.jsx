@@ -1,6 +1,7 @@
 import { useState } from "react"
 import './projects.css'
 import PCBViewer from '../components/PCBViewer'
+import ProjectHeader from "../components/ProjectHeader";
 
 const GCE_SLIDES_EMBED_URL =
     "https://docs.google.com/presentation/d/1b_ouK8cO3UOaYBha5TpRkS9OlhQ9wV4mo2k3saKRWtI/embed?start=false&loop=false";
@@ -13,10 +14,15 @@ export default function GCE() {
     <main>
 
         {/* Introduction */}
-        <h1 className='title'>Autonomous Air Filter Separation</h1>
+        <ProjectHeader
+            title="Autonomous Air Filter Separation"
+            image="/img/GCE/GCEFinal.PNG"
+            role="Electrical and Computer Engineer"
+            timeline="September 2025 – December 2025"
+            tools={["Altium", "Python", "CV2", "BLDC", "SPI"]}
+        />
 
         <div className="columns">
-            <img src="/img/GCE/GCEFinal.PNG" style={{ height: "400px", width: "auto" }} />
             <div className="projectOverview">
                 <h2>Project Overview</h2>
                 <p>

@@ -1,10 +1,14 @@
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 export default function EmbeddedSpider() {
     return (
         <main>
-            <h1 className='title'>Spider Robot</h1>
+            <ProjectHeader
+                title="Spider Robot"
+                image="/img/EmbeddedSpider/embeddedSpider.jpg"
+                tools={["C++", "Embedded", "Quartus", "MobaXterm"]}
+            />
             <div className="columns">
-                <img src="/img/EmbeddedSpider/embeddedSpider.jpg" style={{ height: "400px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

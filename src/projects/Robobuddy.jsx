@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 
 
 export default function Robobuddy() {
@@ -8,9 +9,14 @@ export default function Robobuddy() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className="title">RoboBuddy</h1>
+            <ProjectHeader
+                title="RoboBuddy"
+                image="/img/Robobuddy/robobuddyLogo.png"
+                role="Project Lead"
+                timeline="January 2025 – April 2025"
+                tools={["Python", "Raspberry Pi", "Linux", "LVGL"]}
+            />
             <div className="columns">
-                <img src="/img/Robobuddy/robobuddyLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

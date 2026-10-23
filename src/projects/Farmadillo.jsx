@@ -1,14 +1,20 @@
 import { useState } from "react";
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function Farmadillo() {
     const [activeSection, setActiveSection] = useState(null);
 
     return (
         <main>
-            <h1 className='title'>Farmadillo</h1>
+            <ProjectHeader
+                title="Farmadillo"
+                image="/img/Greenhouse/FarmadilloLogo.png"
+                role="Electrical Engineer"
+                timeline="January 2024 – April 2024"
+                tools={["C++", "Arduino", "Figma"]}
+            />
             <div className="columns">
-                <img src="/img/Greenhouse/FarmadilloLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className='projectOverview'>
                     <h2>Project Overview</h2>
                     <p>

@@ -1,11 +1,17 @@
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 export default function Robot() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className='title'>Robotic Arm</h1>
+            <ProjectHeader
+                title="Robotic Arm"
+                image="/img/Robot/Arm.jpg"
+                role="Solo build"
+                timeline="October 2025 – December 2025"
+                tools={["Python", "EMG", "CV2", "FDM Printing"]}
+            />
             <div className="columns">
-                <img src="/img/Robot/Arm.jpg" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

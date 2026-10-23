@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function PillPal() {
     const [activeSection, setActiveSection] = useState(null);
@@ -7,9 +8,14 @@ export default function PillPal() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className="title">Pill Pal</h1>
+            <ProjectHeader
+                title="Pill Pal"
+                image="/img/PillDispenser/PillPalLogo.png"
+                role="Electrical Engineer"
+                timeline="September 2024 – December 2024"
+                tools={["C++", "LVGL", "Motors"]}
+            />
             <div className="columns">
-                <img src="/img/PillDispenser/PillPalLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

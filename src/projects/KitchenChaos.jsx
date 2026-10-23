@@ -1,5 +1,6 @@
 import './projects.css'
 import { useState } from "react";
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function KitchenChaos() {
     const [activeSection, setActiveSection] = useState(null);
@@ -7,9 +8,14 @@ export default function KitchenChaos() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className='title'>Kitchen Chaos</h1>
+            <ProjectHeader
+                title="Kitchen Chaos"
+                image="/img/KitchenChaos/InGame.png"
+                role="Solo developer"
+                timeline="August 2025 – October 2025"
+                tools={["Unity", "C#", "Netcode"]}
+            />
             <div className="columns">
-                <img src="/img/KitchenChaos/InGame.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./projects.css";
 import PCBViewer from "../components/PCBViewer";
+import ProjectHeader from "../components/ProjectHeader";
 
 const RIVER_GAUGE_SLIDES_EMBED_URL =
   "https://docs.google.com/presentation/d/1qVnTSXfOrcCEBgbSoyVSYVdiSkL9_mIKcLqiptY-WUg/embed?start=false&loop=false";
@@ -12,13 +13,15 @@ export default function RiverGauge() {
   return (
     <main>
       {/* Introduction */}
-      <h1 className="title">River Gauge</h1>
+      <ProjectHeader
+          title="River Gauge"
+          image="/img/RiverGauge/RiverGauge.png"
+          role="Electrical and Computer Engineer"
+          timeline="January 2026 – April 2026"
+          tools={["Altium", "C", "Zephyr RTOS"]}
+      />
 
       <div className="columns">
-        <img
-          src="/img/RiverGauge/RiverGauge.png"
-          style={{ height: "200px", width: "auto" }}
-        />
         <div className="projectOverview">
           <h2>Project Overview</h2>
           <p>

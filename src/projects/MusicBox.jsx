@@ -1,10 +1,17 @@
+import ProjectHeader from "../components/ProjectHeader";
+
 
 export default function MusicBox() {
     return (
         <main>
-            <h1>Music Box</h1>
+            <ProjectHeader
+                title="Music Box"
+                image="/img/MusicBox/MusicBoxLogo.png"
+                role="Software Engineer"
+                timeline="September 2023 – December 2023"
+                tools={["React", "Spotify API", "CSS"]}
+            />
             <div className="columns">
-                <img src="/img/MusicBox/MusicBoxLogo.png" style={{ height: "300px", width: "auto" }}/>
                 <p>
                 MusicBox is a website that allows you to rate albums, search for songs, write reviews, and 
                 share with your friends. I collaborated with four other people in GitHub using React.

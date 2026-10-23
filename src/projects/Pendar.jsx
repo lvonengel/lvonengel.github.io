@@ -1,10 +1,17 @@
+import ProjectHeader from "../components/ProjectHeader";
+
 
 export default function Pendar() {
     return (
         <main>
-            <h1>Pendar Technologies</h1>
+            <ProjectHeader
+                title="Pendar Technologies"
+                image="/img/Home/pendar.png"
+                role="Photonics Automation Engineer (Co-op)"
+                timeline="July 2025 – December 2025"
+                tools={["Robotics", "Multithreading", "Python", "KiCad"]}
+            />
             <div className="columns">
-                <img src="/img/Home/pendar.png" style={{ height: "300px", width: "auto" }}/>
                 <p>
                     For my first co-op at Pendar Technologies, I worked on developing Python 
                     applications and image-processing algorithms for a 6-axis robot that

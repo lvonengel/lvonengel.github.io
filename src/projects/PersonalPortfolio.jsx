@@ -1,11 +1,16 @@
 import './projects.css'
+import ProjectHeader from "../components/ProjectHeader";
 export default function PersonalPortfolio() {
     return (
         <main>
             {/* Introduction */}
-            <h1 className='title'>Website Portfolio</h1>
+            <ProjectHeader
+                title="Website Portfolio"
+                image="/img/PersonalPortfolio/Website.png"
+                role="Solo developer"
+                tools={["React", "Vite", "Node.js"]}
+            />
             <div className="columns">
-                <img src="/img/PersonalPortfolio/Website.png" style={{ height: "300px", width: "auto" }}/>
                 <div className="projectOverview">
                     <h2>Project Overview</h2>
                     <p>
