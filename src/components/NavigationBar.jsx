@@ -5,6 +5,12 @@ export default function NavigationBar() {
   const { pathname } = useLocation();
   const onHome = pathname === "/";
   const toFor = (id) => (onHome ? `#${id}` : { pathname: "/", hash: `#${id}` });
+  const scrollTo = (id) => () => {
+    if (onHome)
+      document
+        .getElementById(id)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <header className="navigation-bar">
@@ -21,13 +27,19 @@ export default function NavigationBar() {
       <nav className="nav-right">
         <ul className="nav-links">
           <li>
-            <Link to={toFor("about")}>About</Link>
+            <Link to={toFor("about")} onClick={scrollTo("about")}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to={toFor("projects")}>Projects</Link>
+            <Link to={toFor("projects")} onClick={scrollTo("projects")}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to={toFor("timeline")}>Work</Link>
+            <Link to={toFor("timeline")} onClick={scrollTo("timeline")}>
+              Work
+            </Link>
           </li>
         </ul>
       </nav>

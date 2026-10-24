@@ -52,6 +52,10 @@ html {
   scroll-margin-top: 80px;
 }
 
+#projects {
+  scroll-margin-top: -44px;
+}
+
 section {
   padding-bottom: 2rem;
 }

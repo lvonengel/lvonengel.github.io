@@ -63,7 +63,10 @@ export default function Luxray() {
           <h3 className="subheading">Final Result</h3>
           <div className="part-body">
             <h4 className="topic">Overview</h4>
-            <p>IN PROGESS AND WILL BE UPDATED</p>
+            <p>
+              This project is still ongoing and will be updated when it is
+              finished.
+            </p>
             {/* <div className="slides-container">
               <iframe
                 src={GCE_SLIDES_EMBED_URL}

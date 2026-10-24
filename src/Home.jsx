@@ -10,8 +10,8 @@ const projects = [
     image: "/img/Luxray/InitialCAD.png",
     to: "/projects/Luxray",
     type: "hardware",
-    desc: "Automating the radiation emissions survey process for assembled CT scanners using a robotic machine.",
-    tags: ["Leadership", "Altium", "Robotics"],
+    desc: "A robotic machine that automates the radiation emissions survey for assembled Lumafield CT scanners.",
+    tags: ["Leadership", "Altium", "Robotics", "Automation"],
   },
   {
     title: "Pendar (Co-op)",
@@ -26,8 +26,8 @@ const projects = [
     image: "/img/GCE/KeyShotRender.png",
     to: "/projects/GCE",
     type: "hardware",
-    desc: "A custom air pleat separator mechanism for a global client, integrating PCB and iterative prototyping through real world constraints.",
-    tags: ["Altium", "Python", "CV2", "BLDC", "SPI"],
+    desc: "A machine that automatically places separators between air filter pleats for GCE, replacing a slow manual step.",
+    tags: ["Altium", "Python", "CV2", "Automation"],
   },
   {
     title: "River Gauge",
@@ -35,7 +35,7 @@ const projects = [
     to: "/projects/RiverGauge",
     type: "both",
     desc: "A low cost, autonomous river monitoring device that measures water level and sends real time data to a public website for a client in Maine.",
-    tags: ["Altium", "C", "Zephyr RTOS"],
+    tags: ["Altium", "C", "Zephyr RTOS", "Low Power"],
   },
   {
     title: "Robotic Arm",
@@ -51,7 +51,7 @@ const projects = [
     image: "/img/StoreSimulator/MainMenu.png",
     to: "/projects/StoreSimulator",
     type: "software",
-    desc: "A 3D Unity retail simulation featuring stocking inventory, pricing, and card collections.",
+    desc: "A 3D retail simulation featuring stocking inventory, pricing, and card collections.",
     tags: ["Unity", "C#", "Animation"],
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     image: "/img/KitchenChaos/KitchenChaosMainMenu.png",
     to: "/projects/KitchenChaos",
     type: "software",
-    desc: "A fast paced multiplayer Unity cooking game where coordination and timing are the difference between chaos and success.",
+    desc: "A fast paced multiplayer cooking game where coordination and timing are the difference between chaos and success.",
     tags: ["Unity", "C#", "Netcode"],
   },
   {
