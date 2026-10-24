@@ -6,6 +6,14 @@ import "./App.css";
 
 const projects = [
   {
+    title: "luX-Ray",
+    image: "/img/Luxray/InitialCAD.png",
+    to: "/projects/Luxray",
+    type: "both",
+    desc: "Automating the radiation emissions survey process for assembled CT scanners using a robotic machine.",
+    tags: ["Leadership", "Altium", "Robotics"],
+  },
+  {
     title: "Pendar (Co-op)",
     image: "/img/Home/pendar.png",
     to: "/projects/Pendar",
