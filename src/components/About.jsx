@@ -40,9 +40,9 @@ export default function About() {
           </motion.h2>
 
           <motion.h1 className="about-body">
-            I'm a Computer Engineer and Computer Science student with a passion
-            for hands on design and solving real world problems through
-            innovation.
+            I'm a Computer Engineer and Computer Science student at Northeastern
+            University with a passion for hands on design and solving real world
+            problems through innovation.
             <br /> <br />
             Ever since I built my first gaming PC in middle school, I've loved
             creating products that blend software and hardware into something
