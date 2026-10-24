@@ -10,7 +10,7 @@
   text-align: left;
 }
 
-.project-header-title {
+.project-header .project-header-title {
   color: black;
   margin: 0 0 32px;
   line-height: 1;
@@ -53,7 +53,15 @@
 
 @media (max-width: 800px) {
   .project-header {
-    grid-template-columns: 1fr;
+    /* let the column shrink below a long word's width */
+    grid-template-columns: minmax(0, 1fr);
     gap: 32px;
+  }
+  .project-header .project-header-title {
+    font-size: clamp(34px, 9vw, 56px);
+    margin-bottom: 24px;
+  }
+  .project-header-meta dd {
+    font-size: 16px;
   }
 }

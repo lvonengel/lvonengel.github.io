@@ -435,3 +435,52 @@ section {
   border: 0;
   border-radius: 8px;
 }
+
+/* handle phones*/
+@media (max-width: 760px) {
+  main .columns {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 0;
+  }
+
+  /* pictures shrink with the screen*/
+  main .columns img,
+  .part-body img {
+    max-width: 100%;
+    height: auto !important;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .media-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .part-body {
+    min-width: 0;
+  }
+
+  main p,
+  main ul,
+  main ol {
+    font-size: 17px;
+  }
+
+  .project-block > .section-heading {
+    font-size: 30px;
+  }
+
+  .subheading {
+    font-size: 22px;
+  }
+
+  .slides-container {
+    padding-top: 75%;
+  }
+
+  .part-body .pdf-container iframe {
+    height: 60vh;
+  }
+}
