@@ -21,10 +21,10 @@ export default function GCE() {
         <h2 className="section-heading">Purpose</h2>
         <p>
           GCE is an air filter manufacturer in Taiwan. Inside every filter,
-          separators have to be placed between the pleats, and their workers
-          were doing it by hand. At 50 to 70 seconds per filter, it was the
-          slowest step in production, and with a shortage of workers, GCE
-          couldn't scale up to meet growing demand.
+          workers would have to place separators between each pleat of the air
+          filter. At 50 to 70 seconds per filter, it quickly became the slowest
+          step in production. With a shortage of workers, GCE could not scale up
+          to meet the growing demand.
         </p>
         <p>
           Our team of 12 engineers set out to automate it. A machine could place
