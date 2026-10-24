@@ -39,7 +39,8 @@ const projects = [
   },
   {
     title: "Robotic Arm",
-    image: "/img/Robot/Arm.jpg",
+    image: "/img/Robot/ArmWhite.jpg",
+    zoomOut: true,
     to: "/projects/Robot",
     type: "hardware",
     desc: "A servo-controlled robotic arm with EMG sensor integration, computer vision, and adjustable motion control.",
@@ -81,7 +82,8 @@ const projects = [
   },
   {
     title: "Farmadillo",
-    image: "/img/Greenhouse/FinalProduct.png",
+    image: "/img/Greenhouse/FinalProductWhite.png",
+    zoomOut: true,
     to: "/projects/Farmadillo",
     type: "hardware",
     desc: "An automated greenhouse system that responds to environmental data and keeps plants growing at optimal conditions.",
