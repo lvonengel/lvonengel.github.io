@@ -6,46 +6,193 @@
 }
 
 video {
-    padding: 10px 10px;
+  padding: 10px 10px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+main .columns {
+  justify-content: flex-start;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.section-heading {
+  margin: 56px 0 8px;
+  font-size: 40px;
+  color: black;
+}
+
+.project-block {
+  padding: 48px 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+.project-header + .project-block {
+  border-top: none;
+  padding-top: 8px;
+}
+
+.project-block > .section-heading {
+  margin: 0 0 20px;
+}
+
+.project-part {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+  padding: 40px 0;
+  border-top: 1px solid #efefef;
+}
+
+.project-block > .section-heading + .project-part {
+  border-top: none;
+  padding-top: 16px;
+}
+
+.project-part > .subheading {
+  align-self: start;
+  margin: 0;
+}
+
+.part-body > :first-child {
+  margin-top: 0;
+}
+
+.part-body p {
+  margin-top: 0;
+}
+
+.part-body img,
+.part-body video {
+  max-width: 100%;
+}
+
+.part-body video {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.part-body .schematic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.part-body .schematic-card {
+  width: auto;
+}
+
+.part-body .schematic-card p {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
+.part-body .pdf-container iframe {
+  width: 100%;
+}
+
+/* two photos side by side */
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* a video or image next to its explanation */
+.media-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.part-body .media-row video {
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+  justify-self: center;
+}
+
+.part-body > img {
+  display: block;
+  border-radius: 8px;
+}
+
+/* parts of a section */
+.subheading {
+  margin: 64px 0 8px;
+  font-size: 24px;
+  color: black;
+}
+
+/* topics within a part */
+.topic {
+  margin: 32px 0 12px;
+  font-size: 19px;
+  color: #333;
+}
+
+@media (max-width: 860px) {
+  .project-part {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .part-body .schematic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.minor-heading {
+  margin-bottom: 0;
+  font-weight: 600;
 }
 
 .projectOverview {
   display: flex;
   flex-direction: column;
-  margin-left: 45px;
-  text-align: center;
-}
-
-.projectOverview h2 {
-  text-align: center;
 }
 
 .heading {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-ul, ol {
+ul,
+ol {
   font-size: 20px;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 section {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 /* --- Schematic Grid --- */
 .schematic-section {
   margin-top: 3rem;
-  text-align: center;
 }
 
 .schematic-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -56,7 +203,9 @@ section {
   padding: 1rem;
   width: 400px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
 }
 
@@ -122,13 +271,23 @@ section {
 
 /* --- Animationsfor modal --- */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .filter-buttons button {
@@ -163,11 +322,11 @@ section {
 
 .pdf-container iframe {
   width: 80%;
-  max-width: 900px; 
+  max-width: 900px;
   height: 80vh;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .github-link {
@@ -181,4 +340,98 @@ section {
 .github-link:hover {
   text-decoration: underline;
   color: #305080;
+}
+.part-body .after-media {
+  margin-top: 24px;
+}
+
+/* grid of short demo clips (Store Simulator) */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.video-card {
+  padding: 14px;
+  border-radius: 8px;
+  background: #f5f7f9;
+}
+
+/* match the topic headings and page text so the cards don't look like a different font */
+.video-card h5 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #333;
+}
+
+.part-body .video-card p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-card h5:last-of-type {
+  margin-bottom: 10px;
+}
+
+.media-row img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.part-body > img {
+  max-height: 520px;
+  object-fit: contain;
+}
+
+/* videos side by side without captions */
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.flow-row img {
+  flex: 1;
+  min-width: 0;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.flow-row .flow-arrow {
+  flex: 0 0 48px;
+}
+
+.part-body .video-row video,
+.part-body .video-card video {
+  width: auto;
+  max-width: 100%;
+  max-height: 480px;
+  margin: 0 auto;
+}
+
+.video-embed {
+  aspect-ratio: 16 / 9;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
 }
