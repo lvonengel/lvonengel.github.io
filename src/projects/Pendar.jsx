@@ -1,33 +1,33 @@
 import ProjectHeader from "../components/ProjectHeader";
 
-
 export default function Pendar() {
-    return (
-        <main>
-            <ProjectHeader
-                title="Pendar Technologies"
-                image="/img/Home/pendar.png"
-                role="Photonics Automation Engineer (Co-op)"
-                timeline="July 2025 – December 2025"
-                tools={["Robotics", "Multithreading", "Python", "KiCad"]}
-            />
-            <div className="columns">
-                <p>
-                    For my first co-op at Pendar Technologies, I worked on developing Python 
-                    applications and image-processing algorithms for a 6-axis robot that
-                    autonomously manufactured components for handheld spectrometers, 
-                    converting a previously manual process into an automated one.
-                </p>
-            </div>
-            <h2>Co-op Presentation</h2>
-            <iframe
-            src="/img/Pendar/PendarCoopPresentation.pdf"
-            width="100%"
-            height="600px"
-            title="PDF Presentation"
-            />
+  return (
+    <main>
+      <ProjectHeader
+        title="Pendar Technologies"
+        image="/img/Home/pendar.png"
+        role="Photonics Automation Engineer (Co-op)"
+        timeline="July 2025 – December 2025"
+        tools={["Robotics", "Multithreading", "Python", "KiCad"]}
+      />
+      <h2 className="section-heading">Purpose</h2>
+      <div className="columns">
+        <p>
+          For my first co-op at Pendar Technologies, I worked on developing
+          Python applications and image-processing algorithms for a 6-axis robot
+          that autonomously manufactured components for handheld spectrometers,
+          converting a previously manual process into an automated one.
+        </p>
+      </div>
+      <h2 className="section-heading">Design Process</h2>
 
-
-        </main>
-    )
+      <h2>Co-op Presentation</h2>
+      <iframe
+        src="/img/Pendar/PendarCoopPresentation.pdf"
+        width="100%"
+        height="600px"
+        title="PDF Presentation"
+      />
+    </main>
+  );
 }
