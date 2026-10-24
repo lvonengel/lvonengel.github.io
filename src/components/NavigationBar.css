@@ -19,6 +19,7 @@
 .nav-logo a {
   color: black;
   text-decoration: none;
+  font-weight: inherit;
 }
 
 .nav-logo a:hover {
@@ -42,4 +43,21 @@
 
 .nav-links a:hover {
   color: #555;
+}
+
+/* adjust for phones */
+@media (max-width: 600px) {
+  .navigation-bar {
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 16px;
+  }
+  .nav-logo {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  .nav-links {
+    gap: 1.5em;
+    font-size: 16px;
+  }
 }

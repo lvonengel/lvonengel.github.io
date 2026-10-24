@@ -28,7 +28,7 @@ export default function ProjectHeader({
           )}
           {tools.length > 0 && (
             <div className="project-header-tools">
-              <dt>Tools</dt>
+              <dt>Skills</dt>
               <dd>{tools.join(", ")}</dd>
             </div>
           )}

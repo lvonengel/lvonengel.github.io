@@ -55,7 +55,8 @@ const projects = [
   },
   {
     title: "RoboBuddy",
-    image: "/img/Robobuddy/robobuddyLogo.png",
+    image: "/img/Robobuddy/RobobuddyWhite.jpg",
+    zoomOut: true,
     to: "/projects/Robobuddy",
     type: "hardware",
     desc: "Project lead for a desktop robot companion built around sensing, feedback, and an expressive face.",
@@ -63,7 +64,8 @@ const projects = [
   },
   {
     title: "Pill Pal",
-    image: "/img/PillDispenser/PillPalLogo.png",
+    image: "/img/PillDispenser/PillPalWhite.png",
+    zoomOut: true,
     to: "/projects/PillPal",
     type: "hardware",
     desc: "An automated pill dispenser designed for safety, authentication, and guided user interaction.",
@@ -71,7 +73,7 @@ const projects = [
   },
   {
     title: "Farmadillo",
-    image: "/img/Greenhouse/FarmadilloLogo.png",
+    image: "/img/Greenhouse/FinalProduct.png",
     to: "/projects/Farmadillo",
     type: "hardware",
     desc: "An automated greenhouse system that responds to environmental data and keeps plants growing at optimal conditions.",
@@ -149,6 +151,7 @@ function Home() {
               key={p.title}
               title={p.title}
               image={p.image}
+              zoomOut={p.zoomOut}
               to={p.to}
               desc={p.desc}
               tags={p.tags}
