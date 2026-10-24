@@ -13,12 +13,16 @@ const textVariants = {
 export default function About() {
   return (
     <section className="about">
-
       <motion.div
         className="marquee"
         initial={{ x: 0 }}
         animate={{ x: "-105%" }}
-        transition={{ duration: 14, ease:"linear", repeat: Infinity, repeatType: "mirror" }}
+        transition={{
+          duration: 14,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "mirror",
+        }}
       >
         Computer Engineer and Computer Science
       </motion.div>
@@ -29,23 +33,24 @@ export default function About() {
           variants={textVariants}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.3 }}>
-            
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <motion.h2 className="about-name" variants={textVariants}>
             Liu von Engelbrechten
           </motion.h2>
 
           <motion.h1 className="about-body">
-            I am a third-year Computer Engineer and Computer Science at Northeastern University from Cleveland, Ohio. 
+            I'm a Computer Engineer and Computer Science student with a passion
+            for hands on design and solving real world problems through
+            innovation.
             <br /> <br />
-            Starting in middle school, when I built my first gaming PC, I've been passionate about engineering and technology. 
-            I've specifically loved product development and robotics where I can design and build systems 
-            that blend software and hardware into something people actually use. <br /> <br />
-
-            In my free time, I love to create video games (see in projects) and play tennis!
-            Please feel free to check out my page!
+            Ever since I built my first gaming PC in middle school, I've loved
+            creating products that blend software and hardware into something
+            people use. I focus particularly on product development and
+            robotics.
+            <br /> <br />
+            Please check out my page and feel free to reach out!
           </motion.h1>
-
         </motion.div>
 
         <motion.div
@@ -55,10 +60,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <img
-            src="/img/Home/HeadshotNoBackground.jpg"
-            alt="Portrait"
-          />
+          <img src="/img/Home/HeadshotNoBackground.jpg" alt="Portrait" />
         </motion.div>
       </div>
     </section>

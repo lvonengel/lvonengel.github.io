@@ -28,10 +28,11 @@
   z-index: 3;
   max-width: min(720px, 52%);
   padding-top: 36px;
+  text-align: left;
 }
 
 .about-name {
-  margin: 0 0 18px;
+  margin: 0 0 36px;
   font-size: 35px;
   letter-spacing: 8px;
   color: rgb(79, 179, 213);
@@ -40,7 +41,7 @@
 
 .about-body {
   margin: 0 0 18px;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
 }
 
@@ -84,7 +85,7 @@
     letter-spacing: 5px;
   }
   .about-body {
-    font-size: 18px;
+    font-size: 16px;
   }
   .about-effects {
     right: 0;
@@ -112,7 +113,7 @@
     letter-spacing: 4px;
   }
   .about-body {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
   }
   .about-effects {
