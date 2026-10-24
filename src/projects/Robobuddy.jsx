@@ -1,128 +1,115 @@
-import { useState } from "react";
-import './projects.css'
+import "./projects.css";
 import ProjectHeader from "../components/ProjectHeader";
 
-
 export default function Robobuddy() {
-    const [activeSection, setActiveSection] = useState(null);
-    
-    return (
-        <main>
-            {/* Introduction */}
-            <ProjectHeader
-                title="RoboBuddy"
-                image="/img/Robobuddy/robobuddyLogo.png"
-                role="Project Lead"
-                timeline="January 2025 – April 2025"
-                tools={["Python", "Raspberry Pi", "Linux", "LVGL"]}
-            />
-            <div className="columns">
-                <div className="projectOverview">
-                    <h2>Project Overview</h2>
-                    <p>
-                    "The friendliest coworker you’ll ever meet." <br /> <br />
-                    For my third semester in Forge, I was the Project Lead for RoboBuddy, a desk companion 
-                    that helps you stay focused, calm, and connected <br /> <br />
-                    I managed a multidisciplinary team of 7 engineers by creating a project timeline, 
-                    hosting team meetings, facilitating communication, motivating the team, and delegating 
-                    tasks – culminating in a product pitch to 100+ audience members.
-                    </p>
-                </div>
+  return (
+    <main>
+      {/* Introduction */}
+      <ProjectHeader
+        title="RoboBuddy"
+        image="/img/Robobuddy/robobuddyLogo.png"
+        role="Project Lead"
+        timeline="January 2025 – April 2025"
+        tools={["Python", "C++", "Raspberry Pi", "Linux", "LVGL", "Arduino"]}
+      />
+
+      <section className="project-block">
+        <h2 className="section-heading">Purpose</h2>
+        <p>
+          "The friendliest coworker you’ll ever meet." <br /> <br />
+          For my third semester in Forge, I was the Project Lead for RoboBuddy,
+          a desk companion that helps you stay focused, calm, and connected{" "}
+          <br /> <br />I managed a multidisciplinary team of 7 engineers by
+          creating a project timeline, hosting team meetings, facilitating
+          communication, motivating the team, and delegating tasks, culminating
+          in a product pitch to 100+ audience members.
+        </p>
+      </section>
+
+      <section className="project-block">
+        <h2 className="section-heading">Design Process</h2>
+
+        {/* Electrical */}
+        <div className="project-part">
+          <h3 className="subheading">Electrical</h3>
+          <div className="part-body">
+            <h4 className="topic">Infrared Sensor</h4>
+            <p>
+              The infrared sensor tracks the user's position to determine if
+              they are working efficiently.
+            </p>
+            <div className="media-row">
+              <img
+                src="/img/Robobuddy/infraredSensor.png"
+                alt="Infrared sensor circuit"
+              />
+              <video controls>
+                <source
+                  src="/img/Robobuddy/infraredSensor.mp4"
+                  type="video/mp4"
+                />
+                Cannot load video.
+              </video>
             </div>
 
-            {/* Skills Learned */}
-            <h2 className="heading">Skills Learned</h2>
-            <p>Hardware: Raspberry Pi, Arduino, Infrared Sensor, Motor controller</p>
-            <p>Software: Linux, LVGL</p>
-            <p>Lanuage: Python, C++</p>
+            <h4 className="topic">Motor Control</h4>
+            <p>
+              The slider on the UI controls the speed of the motor. This is
+              connected to the diffuser to control the strength of the diffuser.
+            </p>
+            <div className="media-row">
+              <img src="/img/Robobuddy/motorCircuit.png" alt="Motor circuit" />
+              <video controls>
+                <source src="/img/Robobuddy/motorSlider.mp4" type="video/mp4" />
+                Cannot load video.
+              </video>
+            </div>
+          </div>
+        </div>
 
-            
-            {/* Final Result Buttons*/}
-            <section>
-                <h2 className="heading">Final Result (Press Buttons Below)</h2>
+        {/* Software */}
+        <div className="project-part">
+          <h3 className="subheading">Software</h3>
+          <div className="part-body">
+            <h4 className="topic">Calendar Data</h4>
+            <div className="flow-row">
+              <img
+                src="/img/Robobuddy/calendarRaspberryPi.png"
+                alt="Raspberry Pi calendar code"
+              />
+              <img
+                className="flow-arrow"
+                src="/img/Greenhouse/arrow.png"
+                alt=""
+              />
+              <img
+                src="/img/Robobuddy/calendarArduino.png"
+                alt="Arduino calendar code"
+              />
+            </div>
+            <ol>
+              <li>Arduino Giga requests calendar data from Raspberry Pi</li>
+              <li>Raspberry Pi grabs user's Google API</li>
+              <li>Raspberry Pi sends data to the Arduino Giga</li>
+              <li>Arduino Giga displays information</li>
+            </ol>
 
-                <div className="buttonContributions">
-                    <button onClick={() => setActiveSection(activeSection === "electrical" ? null : "electrical")}
-                        className={activeSection === "electrical" ? "activeButton": ""}>
-                        Electrical
-                    </button>
+            <h4 className="topic">User Interface</h4>
+            <img
+              src="/img/Robobuddy/sensorScreenUI.png"
+              alt="RoboBuddy screen UI"
+            />
+          </div>
+        </div>
 
-                    <button onClick={() => setActiveSection(activeSection === "software" ? null : "software")}
-                        className={activeSection === "software" ? "activeButton": ""}>
-                        Software
-                    </button>
-
-                    <button onClick={() => setActiveSection(activeSection === "result" ? null : "result")}
-                        className={activeSection === "result" ? "activeButton": ""}>
-                        Final Result
-                    </button>
-                </div>
-            </section>
-
-
-            {/* Electrical */}
-            {activeSection == "electrical" && (
-                <div className="electrical">
-                    <h2>Infrared Sensor</h2>
-                    <p>
-                        The infrared sensor tracks the user's position to determine if they are working efficiently.
-                    </p>
-                    <div className="columns">
-                        <img src="/img/Robobuddy/infraredSensor.png"style={{ height: "325px", width: "auto" }}/>
-                        <video width="200" controls>
-                            <source src="/img/Robobuddy/infraredSensor.mp4" type="video/mp4" />
-                            Cannot load video.
-                        </video>
-                    </div>
-
-                    <h2>Motor Control</h2>
-                    <p>
-                        The slider on the UI controls the speed of the motor. This is connected to the
-                        diffuser to control the strength of the diffuser.
-                    </p>
-                    <div className="columns">
-                        <img src="/img/Robobuddy/motorCircuit.png"style={{ height: "325px", width: "auto" }}/>
-                        <video width="200" controls>
-                            <source src="/img/Robobuddy/motorSlider.mp4" type="video/mp4" />
-                            Cannot load video.
-                        </video>
-                    </div>
-                    
-                </div>
-            )}
-
-            {/* Software */}
-            {activeSection == "software" && (
-                <div classNameName="software">
-                    <h2>Calendar Data</h2>
-                    <div className="columns">
-                        <img src="/img/Robobuddy/calendarRaspberryPi.png" style={{ height: "400px", width: "auto" }}/>
-                        <img src="/img/Greenhouse/arrow.png" style={{ height: "150px", width: "auto" }}/>
-                        <img src="/img/Robobuddy/calendarArduino.png" style={{ height: "400px", width: "auto" }}/>
-                    </div>
-
-                    <div className='columns'>
-                        <ol>
-                            <li>Arduino Giga requests calendar data from Raspberry Pi</li>
-                            <li>Raspberry Pi grabs user's Google API</li>
-                            <li>Raspberry Pi sends data to the Arduino Giga</li>
-                            <li>Arduino Giga displays information</li>
-                        </ol>
-                    </div>
-                    <h2>User Interface</h2>
-                    <div className="columns">
-                        <img src="/img/Robobuddy/sensorScreenUI.png" style={{ height: "300px", width: "auto" }}/>
-                    </div>
-
-                </div>
-            )}
-
-            {/* Final Result */}
-            {activeSection == "result" && (
-                <img src="/img/Robobuddy/robobuddyFinal.jpg" style={{ height: "400px", width: "auto" }}/>
-            )}
-
-
-        </main>
-    )
+        {/* Final Result */}
+        <div className="project-part">
+          <h3 className="subheading">Final Result</h3>
+          <div className="part-body">
+            <img src="/img/Robobuddy/Robobuddy.jpg" alt="Finished RoboBuddy" />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

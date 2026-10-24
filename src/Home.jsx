@@ -9,7 +9,7 @@ const projects = [
     title: "luX-Ray",
     image: "/img/Luxray/InitialCAD.png",
     to: "/projects/Luxray",
-    type: "both",
+    type: "hardware",
     desc: "Automating the radiation emissions survey process for assembled CT scanners using a robotic machine.",
     tags: ["Leadership", "Altium", "Robotics"],
   },

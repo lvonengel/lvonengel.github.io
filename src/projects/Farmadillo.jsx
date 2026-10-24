@@ -1,137 +1,134 @@
-import { useState } from "react";
-import './projects.css'
+import "./projects.css";
 import ProjectHeader from "../components/ProjectHeader";
 
 export default function Farmadillo() {
-    const [activeSection, setActiveSection] = useState(null);
+  return (
+    <main>
+      <ProjectHeader
+        title="Farmadillo"
+        image="/img/Greenhouse/FarmadilloLogo.png"
+        role="Electrical Engineer"
+        timeline="January 2024 – April 2024"
+        tools={["C++", "Arduino", "Figma"]}
+      />
 
-    return (
-        <main>
-            <ProjectHeader
-                title="Farmadillo"
-                image="/img/Greenhouse/FarmadilloLogo.png"
-                role="Electrical Engineer"
-                timeline="January 2024 – April 2024"
-                tools={["C++", "Arduino", "Figma"]}
-            />
-            <div className="columns">
-                <div className='projectOverview'>
-                    <h2>Project Overview</h2>
-                    <p>
-                        The automatic greenhouse, known as Farmadillo, is an easy-to-assemble product that allows users to keep
-                        their plant in a safe and controlled environment outdoors, keeping away pests and shading it
-                        from excessive light. <br /> <br />
-                        Using the controlled box, users can wirelessly assign unique plant profiles
-                        to each Farmadillo "shell," allowing a system of easily-controlled greenhouses to be set up across one yard.
-                        The control box will provide information on the optimal amount of sunlight, closing or opening the dome.
-                    </p>
-                </div>
+      <section className="project-block">
+        <h2 className="section-heading">Purpose</h2>
+        <p>
+          The automatic greenhouse, known as Farmadillo, is an easy-to-assemble
+          product that allows users to keep their plant in a safe and controlled
+          environment outdoors, keeping away pests and shading it from excessive
+          light. <br /> <br />
+          Using the controlled box, users can wirelessly assign unique plant
+          profiles to each Farmadillo "shell," allowing a system of
+          easily-controlled greenhouses to be set up across one yard. The
+          control box will provide information on the optimal amount of
+          sunlight, closing or opening the dome.
+        </p>
+      </section>
+
+      <section className="project-block">
+        <h2 className="section-heading">Design Process</h2>
+
+        {/* Electrical */}
+        <div className="project-part">
+          <h3 className="subheading">Electrical</h3>
+          <div className="part-body">
+            <h4 className="topic">The Dome</h4>
+            <p>
+              Programmed and controlled dual servos for dome actuation for a
+              fully automated and responsive greenhouse environment
+            </p>
+            <div className="flow-row">
+              <img
+                src="/img/Greenhouse/GreenhouseMaterial.png"
+                alt="Greenhouse dome material"
+              />
+              <img
+                className="flow-arrow"
+                src="/img/Greenhouse/arrow.png"
+                alt=""
+              />
+              <img
+                src="/img/Greenhouse/CoverClosed.png"
+                alt="Dome with the cover closed"
+              />
+            </div>
+            <div className="video-row">
+              <video controls>
+                <source src="/img/Greenhouse/servos.mp4" type="video/mp4" />
+                Cannot load video.
+              </video>
+              <video controls>
+                <source
+                  src="/img/Greenhouse/servoWithCover.mp4"
+                  type="video/mp4"
+                />
+                Cannot load video.
+              </video>
             </div>
 
-            {/* Skills Learned */}
-            <h2 className="heading">Skills Learned</h2>
-            <p>Hardware: Arduino, Microcontroller, Lux Sensor, Motor controller</p>
-            <p>Language: C++</p>
+            <h4 className="topic">Sensors</h4>
+            <p>
+              Programmed a lux and moisture sensor to fully automate the dome.
+            </p>
+            <div className="image-row">
+              <img src="/img/Greenhouse/LuxSensor.png" alt="Lux sensor" />
+              <img
+                src="/img/Greenhouse/MoistureSensor.png"
+                alt="Moisture sensor"
+              />
+            </div>
+          </div>
+        </div>
 
-            {/* Personal Contribution */}
-            <section>
-                <h2 className="heading">Personal Contributions (Press Buttons Below)</h2>
+        {/* Software */}
+        <div className="project-part">
+          <h3 className="subheading">Software</h3>
+          <div className="part-body">
+            <h4 className="topic">App Design</h4>
+            <p>
+              <a
+                href="https://www.figma.com/proto/9EvpaHiCn66HPtarekhZex/Forge-App-Idea?node-id=0-1&t=56Wz9oQddgJ1smLV-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Here
+              </a>{" "}
+              is an outline of the app created in Figma. In this app, the user
+              can store different plant profiles that require different amount
+              of sunlight.
+            </p>
+            <img
+              src="/img/Greenhouse/OutlineFigma.png"
+              alt="Figma outline of the app"
+            />
 
-                <div className="buttonContributions">
-                    <button onClick={() => setActiveSection(activeSection === "electrical" ? null : "electrical")}
-                        className={activeSection === "electrical" ? "activeButton": ""}>
-                        Electrical Contribution
-                    </button>
+            <h4 className="topic">LCD Screen</h4>
+            <p>
+              Developed an automatic greenhouse system with integrated lux and
+              soil moisture sensors to optimize plant protection by dynamically
+              opening and closing a dome based on sunlight and soil moisture
+              levels
+            </p>
+            <img src="/img/Greenhouse/LCDScreen.png" alt="LCD screen" />
+          </div>
+        </div>
 
-                    <button onClick={() => setActiveSection(activeSection === "software" ? null : "software")}
-                        className={activeSection === "software" ? "activeButton": ""}>
-                        Software Contribution
-                    </button>
-
-                    <button onClick={() => setActiveSection(activeSection === "result" ? null : "result")}
-                        className={activeSection === "result" ? "activeButton": ""}>
-                        Final Result
-                    </button>
-                </div>
-            </section>
-
-            {/* Electrical Contributions */}
-            {activeSection == "electrical" && (
-                <div className="electrical">
-                    <h2>The Dome</h2>
-                    <p>
-                        Programmed and controlled dual servos for dome actuation for a fully automated 
-                        and responsive greenhouse environment
-                    </p>
-                    <div className="columns">
-                        <img src="/img/Greenhouse/GreenhouseMaterial.png" style={{ height: "300px", width: "auto" }}/>
-                        <img src="/img/Greenhouse/arrow.png" style={{ height: "300px", width: "auto" }}/>
-                        <img src="/img/Greenhouse/CoverClosed.png" style={{ height: "300px", width: "auto" }}/>
-                    </div>
-
-                    {/* Video for Servos */}
-                    <div className="videoContainer">
-                        <video width="400" controls>
-                            <source src="/img/Greenhouse/servos.mp4" type="video/mp4" />
-                            Cannot load video.
-                        </video>
-
-                        <video width="400" controls>
-                            <source src="/img/Greenhouse/servoWithCover.mp4" type="video/mp4" />
-                            Cannot load video.
-                        </video>
-                    </div>
-
-                    {/* Electical Components */}
-                    <h2>Sensors</h2>
-                    <p>
-                        Programmed a lux and moisture sensor to fully automate the dome.
-                    </p>
-                    <div className="columns">
-                    <figure>
-                        <img src="/img/Greenhouse/LuxSensor.png" style={{ height: "300px", width: "auto" }}/>
-                    </figure>
-
-                    <figure>
-                        <img src="/img/Greenhouse/MoistureSensor.png" style={{ height: "300px", width: "auto" }}/>
-                    </figure>
-                    </div>
-
-                </div>
-            )}
-
-            {/* Software Contribution */}
-            {activeSection == "software" && (
-                <div className="software">
-                    <h2>App Design</h2>
-                    <p>
-                        <a href="https://www.figma.com/proto/9EvpaHiCn66HPtarekhZex/Forge-App-Idea?node-id=0-1&t=56Wz9oQddgJ1smLV-1">Here </a> 
-                        is an outline of the app created in Figma. In this app, the user can store different plant profiles that require
-                        different amount of sunlight.
-                    </p>
-                    <img src="/img/Greenhouse/OutlineFigma.png" style={{ height: "300px", width: "auto" }}/>
-
-                    {/* LCD Screen */}
-                    <h2>LCD Screen</h2>
-                    <p>
-                        Developed an automatic greenhouse system with integrated lux and soil moisture sensors to optimize
-                        plant protection by dynamically opening and closing a dome based on sunlight and soil moisture levels
-                    </p>
-                    <figure>
-                        <img src="/img/Greenhouse/LCDScreen.png" style={{ height: "300px", width: "auto" }}/>
-                    </figure>
-                </div>
-            )}
-
-            {/* Final Result */}
-            {activeSection == "result" && (
-                <div className="columns">
-                    <img src="/img/Greenhouse/ControlBox.png" style={{ height: "300px", width: "auto" }}/>
-                    <img src="/img/Greenhouse/FinalProduct.png" style={{ height: "300px", width: "auto" }}/>
-                </div>
-
-            )}
-            
-        </main>
-    )
+        {/* Final Result */}
+        <div className="project-part">
+          <h3 className="subheading">Final Result</h3>
+          <div className="part-body">
+            <div className="image-row">
+              <img src="/img/Greenhouse/ControlBox.png" alt="Control box" />
+              <img
+                src="/img/Greenhouse/FinalProduct.png"
+                alt="Finished Farmadillo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
