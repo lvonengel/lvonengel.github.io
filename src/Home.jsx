@@ -7,7 +7,7 @@ import "./App.css";
 const projects = [
   {
     title: "luX-Ray",
-    image: "/img/Luxray/InitialCAD.png",
+    image: "/img/Luxray/InitialCADZoomedOut.png",
     to: "/projects/Luxray",
     type: "hardware",
     desc: "A robotic machine that automates the radiation emissions survey for assembled Lumafield CT scanners.",
