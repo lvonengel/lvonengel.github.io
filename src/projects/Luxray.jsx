@@ -1,3 +1,4 @@
+import PCBViewer from "../components/PCBViewer";
 import ProjectHeader from "../components/ProjectHeader";
 
 export default function Luxray() {
@@ -14,11 +15,7 @@ export default function Luxray() {
       {/* Project */}
       <section className="project-block">
         <h2 className="section-heading">Purpose</h2>
-        <p>
-          For my third semester in Generate, I am the electrical and computer
-          technical lead where I manage 4 electrical engineers and 3 firmware
-          engineers.
-        </p>
+
         <p>
           Lumafield's CT scanners must be manually swept for radiation leaks
           before shipping, a process that takes an operator 30 to 60 minutes per
@@ -27,6 +24,19 @@ export default function Luxray() {
           manual sweep with a repeatable mechanical motion. The system will flag
           unsafe readings, avoid collisions with the scanner's exterior, and
           free up operator time.
+        </p>
+
+        <p>
+          For this project, I am the electrical and computer technical lead,
+          managing 4 electrical engineers and 3 firmware engineers. My role
+          centers on mentoring the team through schematic and layout reviews,
+          prototyping decisions, and firmware architecture, while directing the
+          electrical and firmware subsystem designs. I lead the
+          electromechanical integration between the gantry and its sensors,
+          motors, and control electronics. This project pushes me to think
+          beyond my own designs and focus on the bigger picture, coordinating
+          multiple subsystems while helping my team build the judgement to make
+          strong design decisions.
         </p>
       </section>
 
@@ -37,18 +47,22 @@ export default function Luxray() {
         <div className="project-part electrical">
           <h3 className="subheading">Electrical</h3>
           <div className="part-body">
-            <h4 className="topic">Main MCU PCB</h4>
+            <h4 className="topic">PCB Designs</h4>
 
             <p>
-              The electrical system consists of two boards. Our main board will
-              handle control for the xyz linear motors, limit switches, USB-C
-              connection to the app, E-stop, and LED tower. The second board
-              will be placed on the end effector and manage the rotational
-              movement, IMU, distance sensor, and radeye data. These two boards
-              will communicate through CAN and all wiring will be carried in
-              cable chain.
+              The electrical system consists of two boards. The main board
+              handles control for the xyz linear motors, limit switches, USB-C
+              connection to the app, E-stop, and LED tower. The second board is
+              placed on the end effector and manages the rotational movement,
+              IMU, distance sensor, and radeye data. These two boards will
+              communicate through CAN and all wiring will be carried in cable
+              chain.
             </p>
-            {/* <PCBViewer modelPath="/models/.glb" fullWidth /> */}
+            <h4 className="topic">Main PCB</h4>
+            <PCBViewer modelPath="/models/MainboardPCB.glb" fullWidth />
+
+            <h4 className="topic">Motorboard PCB</h4>
+            <PCBViewer modelPath="/models/MotorboardPCB.glb" fullWidth />
 
             {/* <h4 className="topic">Physical PCB</h4>
             <div className="image-row">

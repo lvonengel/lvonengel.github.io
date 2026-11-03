@@ -1,8 +1,21 @@
+import { useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF, Center } from "@react-three/drei";
 
 function PCBModel({ modelPath }) {
   const { scene } = useGLTF(modelPath);
+
+  // Treat materials as non-metal so that it appears brighter
+  useMemo(() => {
+    scene.traverse((obj) => {
+      const m = obj.material;
+      if (m && m.metalness === 1 && m.roughness === 1) {
+        m.metalness = 0;
+        m.roughness = 0.6;
+      }
+    });
+  }, [scene]);
+
   return <primitive object={scene} scale={8} />;
 }
 
