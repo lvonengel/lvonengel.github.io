@@ -1,6 +1,12 @@
-import { useMemo } from "react";
+import { Suspense, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment, useGLTF, Center } from "@react-three/drei";
+import {
+  OrbitControls,
+  useGLTF,
+  Center,
+  Environment,
+  Lightformer,
+} from "@react-three/drei";
 
 function PCBModel({ modelPath }) {
   const { scene } = useGLTF(modelPath);
@@ -19,7 +25,13 @@ function PCBModel({ modelPath }) {
   return <primitive object={scene} scale={8} />;
 }
 
-export default function PCBViewer({ modelPath, fullWidth = false }) {
+export default function PCBViewer({
+  modelPath,
+  fullWidth = false,
+  brightness = 0.55,
+}) {
+  const fill = brightness * brightness;
+
   return (
     //keeps box centered onpage
     <div
@@ -48,17 +60,52 @@ export default function PCBViewer({ modelPath, fullWidth = false }) {
           camera={{ position: [0, 0, 2], fov: 35 }}
           style={{ filter: "brightness(0.9) contrast(0.95)" }}
         >
-          <ambientLight intensity={0.4} />
+          <ambientLight intensity={0.8 * fill} />
+          <hemisphereLight args={["#ffffff", "#b0b4bc", 0.8 * fill]} />
           <directionalLight
             position={[3, 3, 5]}
-            intensity={0.6}
+            intensity={1.4 * brightness}
             color="#fff2e5"
           />
-          <Environment preset="city" background={false} blur={0.5} />
+          <directionalLight
+            position={[-4, 2, -3]}
+            intensity={0.6 * brightness}
+          />
 
-          <Center>
-            <PCBModel modelPath={modelPath} />
-          </Center>
+          <Environment resolution={256}>
+            <Lightformer
+              form="rect"
+              intensity={3 * fill}
+              position={[0, 5, 2]}
+              rotation-x={Math.PI / 2}
+              scale={[10, 10, 1]}
+            />
+            <Lightformer
+              form="rect"
+              intensity={1.5 * fill}
+              position={[-5, 1, 1]}
+              rotation-y={Math.PI / 2}
+              scale={[6, 4, 1]}
+            />
+            <Lightformer
+              form="rect"
+              intensity={1.5 * fill}
+              position={[5, 1, 1]}
+              rotation-y={-Math.PI / 2}
+              scale={[6, 4, 1]}
+            />
+            <Lightformer
+              form="rect"
+              intensity={1 * fill}
+              position={[0, 0, 6]}
+              scale={[8, 4, 1]}
+            />
+          </Environment>
+          <Suspense fallback={null}>
+            <Center>
+              <PCBModel modelPath={modelPath} />
+            </Center>
+          </Suspense>
 
           <OrbitControls
             enableZoom

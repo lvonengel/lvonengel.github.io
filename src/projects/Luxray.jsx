@@ -59,10 +59,10 @@ export default function Luxray() {
               chain.
             </p>
             <h4 className="topic">Main PCB</h4>
-            <PCBViewer modelPath="/models/MainboardPCB.glb" fullWidth />
+            <PCBViewer modelPath="/models/MainboardPCB.glb" fullWidth brightness={1} />
 
             <h4 className="topic">Motorboard PCB</h4>
-            <PCBViewer modelPath="/models/MotorboardPCB.glb" fullWidth />
+            <PCBViewer modelPath="/models/MotorboardPCB.glb" fullWidth brightness={1} />
 
             {/* <h4 className="topic">Physical PCB</h4>
             <div className="image-row">
