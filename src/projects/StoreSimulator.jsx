@@ -1,6 +1,6 @@
 import "./projects.css";
 import ProjectHeader from "../components/ProjectHeader";
-import VideoGrid from "../components/VideoGrid";
+import Grid from "../components/Grid";
 
 export default function StoreSimulator() {
   return (
@@ -48,8 +48,8 @@ export default function StoreSimulator() {
               Each step below highlights concepts I implemented as part of the
               core mechanics of this game.
             </p>
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/StoreSimulator/BuyingItemsFromStore.mp4",
                   title: "Buying Inventory",
@@ -83,8 +83,8 @@ export default function StoreSimulator() {
               focus on adding cool touches. Below are some of the features that
               I have implemented.
             </p>
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/StoreSimulator/BuyingWithCart.mp4",
                   title: "Buying Items with a Cart",
@@ -122,8 +122,8 @@ export default function StoreSimulator() {
               an internal book of all cards the player has collected with the
               aim to collect every one!
             </p>
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/StoreSimulator/OpeningCardPacks.mp4",
                   title: "Opening Card Packs",
@@ -182,8 +182,8 @@ export default function StoreSimulator() {
                 View Project on GitHub →
               </a>
             </p>
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/StoreSimulator/PlacingCardsDown.mp4",
                   title: "Placing Cards Down",

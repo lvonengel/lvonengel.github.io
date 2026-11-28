@@ -345,39 +345,39 @@ section {
   margin-top: 24px;
 }
 
-/* grid of short demo clips (Store Simulator) */
-.video-grid {
+/* grid of media cards (videos or images) */
+.media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 8px;
 }
 
-.video-card {
+.media-card {
   padding: 14px;
   border-radius: 8px;
   background: #f5f7f9;
 }
 
 /* match the topic headings and page text so the cards don't look like a different font */
-.video-card h5 {
+.media-card h5 {
   margin: 0 0 4px;
   font-size: 18px;
   color: #333;
 }
 
-.part-body .video-card p {
+.part-body .media-card p {
   margin: 0 0 10px;
   font-size: 16px;
 }
 
 @media (max-width: 640px) {
-  .video-grid {
+  .media-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.video-card h5:last-of-type {
+.media-card h5:last-of-type {
   margin-bottom: 10px;
 }
 
@@ -418,11 +418,17 @@ section {
 }
 
 .part-body .video-row video,
-.part-body .video-card video {
+.part-body .media-card video,
+.part-body .media-card img {
   width: auto;
   max-width: 100%;
   max-height: 480px;
   margin: 0 auto;
+}
+
+.media-card img {
+  display: block;
+  border-radius: 8px;
 }
 
 .video-embed {

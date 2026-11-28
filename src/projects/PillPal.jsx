@@ -1,6 +1,6 @@
 import "./projects.css";
 import ProjectHeader from "../components/ProjectHeader";
-import VideoGrid from "../components/VideoGrid";
+import Grid from "../components/Grid";
 
 export default function PillPal() {
   return (
@@ -126,8 +126,8 @@ export default function PillPal() {
         <div className="project-part">
           <h3 className="subheading">Final Result</h3>
           <div className="part-body">
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/PillDispenser/Dispense.mp4",
                   title: "Example of a child taking pills",

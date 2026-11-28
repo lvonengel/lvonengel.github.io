@@ -1,6 +1,6 @@
 import "./projects.css";
 import ProjectHeader from "../components/ProjectHeader";
-import VideoGrid from "../components/VideoGrid";
+import Grid from "../components/Grid";
 
 export default function KitchenChaos() {
   return (
@@ -57,8 +57,8 @@ export default function KitchenChaos() {
         <div className="project-part">
           <h3 className="subheading">Singleplayer</h3>
           <div className="part-body">
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/KitchenChaos/HighlightsCounter.mp4",
                   title: "Highlighting Counters",
@@ -119,8 +119,8 @@ export default function KitchenChaos() {
               the Relay sends packets back and forth between the connected Host
               and Clients.
             </p>
-            <VideoGrid
-              videos={[
+            <Grid
+              items={[
                 {
                   src: "/img/KitchenChaos/SyncingGameState.mp4",
                   title: "Syncing Game State",
