@@ -118,6 +118,10 @@ export default function RISCVCPU() {
             In addition to the instruction decoder, I also added a debounced
             push button as the CPU's clock, so a program can be stepped through
             one instruction at a time and checked at each step.
+            <img
+              src="/img/RISCVCPU/InstructionSet.png"
+              style={{ height: "400px", width: "auto" }}
+            />
           </div>
         </div>
         <div className="project-part">
