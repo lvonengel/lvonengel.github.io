@@ -47,6 +47,15 @@ const projects = [
     tags: ["Python", "EMG", "CV2", "FDM Printing"],
   },
   {
+    title: "FPGA RISCV Processor",
+    image: "/img/RISCVCPU/DigitalDesign.png",
+    zoomOut: true,
+    to: "/projects/RISCVCPU",
+    type: "hardware",
+    desc: "A 16-bit single-cycle RISC-V like CPU built in System Verilog on a Xilinx Zynq FPGA.",
+    tags: ["Vivado", "System Verilog", "Xilinx FPGA", "Digital Design"],
+  },
+  {
     title: "RoboBuddy",
     image: "/img/Robobuddy/RobobuddyWhite.jpg",
     zoomOut: true,

@@ -8,6 +8,7 @@ import RiverGauge from "./projects/RiverGauge";
 import Pendar from "./projects/Pendar";
 import GCE from "./projects/GCE";
 import Robot from "./projects/Robot";
+import RISCVCPU from "./projects/RISCVCPU";
 import StoreSimulator from "./projects/StoreSimulator";
 import KitchenChaos from "./projects/KitchenChaos";
 import PersonalPortfolio from "./projects/PersonalPortfolio";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/projects/Pendar" element={<Pendar />} />
         <Route path="/projects/GCE" element={<GCE />} />
         <Route path="/projects/Robot" element={<Robot />} />
+        <Route path="/projects/RISCVCPU" element={<RISCVCPU />} />
         <Route path="/projects/StoreSimulator" element={<StoreSimulator />} />
         <Route path="/projects/KitchenChaos" element={<KitchenChaos />} />
         <Route path="/projects/EmbeddedSpider" element={<EmbeddedSpider />} />
